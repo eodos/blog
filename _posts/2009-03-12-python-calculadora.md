@@ -19,7 +19,8 @@ categories:
 tags:
   - Python
 ---
-<pre class="lang:python decode:true ">#!/usr/bin/env python
+```python
+#!/usr/bin/env python
 
 #Datos del programa:
 #Programa: Calculadora.
@@ -122,7 +123,8 @@ while operacion!=7:
           raiz=float(numero2)**0.5
           print str(raiz)
     elif tiporaiz==3:
-       if numero1         print "La raiz no tiene soluciones reales"
+       if numero1:
+         print "La raiz no tiene soluciones reales"
        else:
          raiz1=float(numero1)**0.5
          raiz2=float(numero2)**0.5
@@ -138,6 +140,5 @@ while operacion!=7:
 
 if operacion==7:
   print "Gracias por usar el programa"
-  raw_input()</pre>
-
-&nbsp;
+  raw_input()
+```

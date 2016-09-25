@@ -22,13 +22,14 @@ url: "https://eodos.github.io" # the base hostname & protocol for your site
 twitter_username: eodos
 github_username:  eodos
 
+# Disqus comments configuration (leave blank to disable comments)
+disqus_shortname: 'eodos'
+
 # Build settings
-markdown: kramdown
+markdown: redcarpet
+highlighter: rouge
 theme: minima
 
-defaults:
-  scope:
-    path: "_posts"
-  values:
-    layout: "posts.html"
-    comments: true
+# Enable when using redcarpet
+redcarpet:
+extensions: ['smart', 'tables', 'with_toc_data', 'footnotes']

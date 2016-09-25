@@ -27,7 +27,7 @@ tags:
 
 <ul style="text-align: justify;">
   <li>
-    <strong>-c</strong> &#8216;<<em>comentario</em>>&#8217;. Permite añadir un comentario al usuario, como puede ser su nombre real.
+    <strong>-c</strong> &#8216;<<em>comentario</em>>'. Permite añadir un comentario al usuario, como puede ser su nombre real.
   </li>
   <li>
     <strong>-d</strong> <<em>directorio</em>>. Esta opción nos permite cambiar el directorio por defecto del usuario, que suele ser <strong>/home/<usuario></strong>.
@@ -88,7 +88,7 @@ tags:
 <pre class="">$ sudo usermod -d /var/www/html/eodos eodos</pre>
 
 <p style="text-align: justify;">
-  Le cambiamos el shell a &#8220;/bin/ksh&#8221;
+  Le cambiamos el shell a "/bin/ksh"
 </p>
 
 <pre class="">$ sudo usermod -s /bin/ksh eodos</pre>

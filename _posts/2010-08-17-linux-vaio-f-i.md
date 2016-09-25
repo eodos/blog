@@ -21,17 +21,17 @@ tags:
   - Linux
   - Vaio
 ---
-Hace unos días, recibí mi portátil Vaio serie F (VPCF126FM). Es una pasada: lleva un i7, 6 GB de memoria RAM, una GeForce 330&#8230;.
+Hace unos días, recibí mi portátil Vaio serie F (VPCF126FM). Es una pasada: lleva un i7, 6 GB de memoria RAM, una GeForce 330....
 
 De serie incluye Windows 7 Home Edition. Y como defensor del software libre que soy, pues me propuse instalarle una distribución GNU/Linux 🙂
 
-La elegida en esta ocasión fue Debian en su versión estable (5.05). El motivo fue que estoy&nbsp;acostumbrado&nbsp;a usar Kubuntu, y me apetecía probar su distribución &#8220;madre&#8221;. Durante la instalación surgieron estos dos problemas, que en principio ignoré para intentar arreglarlos más adelante:
+La elegida en esta ocasión fue Debian en su versión estable (5.05). El motivo fue que estoy&nbsp;acostumbrado&nbsp;a usar Kubuntu, y me apetecía probar su distribución "madre". Durante la instalación surgieron estos dos problemas, que en principio ignoré para intentar arreglarlos más adelante:
 
   * El touchpad no funciona.
   * No reconoce la tarjeta de red.
 
 <div>
-  Sobre el touchpad, se solucionó fácilmente añadiendo el parámetro &#8220;<b>i8042.nopnp</b>&#8221; al boot del kernel. Para hacerlo, al inciar el ordenador en el grub os colocáis sobre vuestra distribución Debian y pulsáis &#8220;e&#8221;. Vais a la línea del kernel y&nbsp;volvéis&nbsp;a pulsar &#8220;e&#8221;. Os situáis al final de la línea, y escribís ese parámetro sin comillas. Agradezco a ESC201 en su <a href="http://code.google.com/p/vaio-f11-linux/issues/detail?id=1#c21">entrada</a>, que me ayudó a resolver el problema.
+  Sobre el touchpad, se solucionó fácilmente añadiendo el parámetro "<b>i8042.nopnp</b>" al boot del kernel. Para hacerlo, al inciar el ordenador en el grub os colocáis sobre vuestra distribución Debian y pulsáis "e". Vais a la línea del kernel y&nbsp;volvéis&nbsp;a pulsar "e". Os situáis al final de la línea, y escribís ese parámetro sin comillas. Agradezco a ESC201 en su <a href="http://code.google.com/p/vaio-f11-linux/issues/detail?id=1#c21">entrada</a>, que me ayudó a resolver el problema.
 </div>
 
 <div>

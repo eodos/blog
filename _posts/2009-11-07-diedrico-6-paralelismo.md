@@ -20,29 +20,24 @@ tags:
   - Diedrico
   - Paralelismo
 ---
-<span style="font-weight: bold;">Índice</span>
+#Índice
   
-[Lección 1 - Conceptos y fundamentos básicos](/dibujo/diedrico-1-conceptos/)
-  
-[Lección 2 - El punto](/dibujo/diedrico-2-el-punto/)
-  
-[Lección 3 - La recta](/dibujo/diedrico-3-la-recta/)
-  
-[Lección 4 - El plano](/dibujo/diedrico-4-el-plano/)
-  
-[Lección 5 - Rectas características del plano e intersecciones](/dibujo/diedrico-5-rectas-caracteristicas/)
-  
-[Lección 6 - Paralelismo](/dibujo/diedrico-6-paralelismo/)
+* [Lección 1 - Conceptos y fundamentos básicos](/blog/dibujo/diedrico-1-conceptos/)
+* [Lección 2 - El punto](/blog/dibujo/diedrico-2-el-punto/)
+* [Lección 3 - La recta](/blog/dibujo/diedrico-3-la-recta/)
+* [Lección 4 - El plano](/blog/dibujo/diedrico-4-el-plano/)
+* [Lección 5 - Rectas características del plano e intersecciones](/blog/dibujo/diedrico-5-rectas-caracteristicas/)
+* [Lección 6 - Paralelismo](/blog/dibujo/diedrico-6-paralelismo/)
 
-<span style="font-weight: bold;"><br /> Recta paralela a otra recta</span>
+#Recta paralela a otra recta
 
 Una recta es paralela a otra cuando sus proyecciones homónimas lo son entre sí.
   
-No importa la posición relativa de las nueva recta paralela, es decir, que podéis colocar s&#8217; y s como queráis, no tienen que estar a la misma distancia que r&#8217; y r.
+No importa la posición relativa de las nueva recta paralela, es decir, que podéis colocar s' y s como queráis, no tienen que estar a la misma distancia que r' y r.
 
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/_H4ctsPRjMs8/SvWCnlfzwyI/AAAAAAAAAJ4/J0CB0qXDpjM/s1600-h/paralelismo+1.JPG" data-rel="lightbox-0" title=""><img id="BLOGGER_PHOTO_ID_5401366944692814626" style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 395px; height: 279px;" src="https://i0.wp.com/1.bp.blogspot.com/_H4ctsPRjMs8/SvWCnlfzwyI/AAAAAAAAAJ4/J0CB0qXDpjM/s400/paralelismo+1.JPG" alt="" border="0" data-recalc-dims="1" /></a>
 
-<span style="font-weight: bold;">Recta paralela a un plano</span>
+#Recta paralela a un plano
 
 Una recta es paralela a un plano, cuando ese plano contiene al menos una recta paralela a la recta.
 
@@ -54,7 +49,7 @@ Hacemos una recta s paralela a r por ese punto, y luego hacemos un plano arbitra
 
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_H4ctsPRjMs8/SvWCn1fcTXI/AAAAAAAAAKI/f0hpLK4XHnA/s1600-h/paralelismo+3.JPG" data-rel="lightbox-2" title=""><img id="BLOGGER_PHOTO_ID_5401366948986244466" style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 395px; height: 279px;" src="https://i0.wp.com/3.bp.blogspot.com/_H4ctsPRjMs8/SvWCn1fcTXI/AAAAAAAAAKI/f0hpLK4XHnA/s400/paralelismo+3.JPG" alt="" border="0" data-recalc-dims="1" /></a>
 
-<span style="font-weight: bold;">Plano paralelo a otro plano</span>
+#Plano paralelo a otro plano
 
 Un plano es paralelo a otro cuando sus trazas homónimas lo son.
   

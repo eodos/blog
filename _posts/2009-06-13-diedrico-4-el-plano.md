@@ -22,19 +22,14 @@ tags:
   - Diedrico
   - plano
 ---
-<span style="font-weight: bold;">Índice</span>
+#Índice
   
-[Lección 1 - Conceptos y fundamentos básicos](/dibujo/diedrico-1-conceptos/)
-  
-[Lección 2 - El punto](/dibujo/diedrico-2-el-punto/)
-  
-[Lección 3 - La recta](/dibujo/diedrico-3-la-recta/)
-  
-[Lección 4 - El plano](/dibujo/diedrico-4-el-plano/)
-  
-[Lección 5 - Rectas características del plano e intersecciones](/dibujo/diedrico-5-rectas-caracteristicas/)
-  
-[Lección 6 - Paralelismo](/dibujo/diedrico-6-paralelismo/)
+* [Lección 1 - Conceptos y fundamentos básicos](/blog/dibujo/diedrico-1-conceptos/)
+* [Lección 2 - El punto](/blog/dibujo/diedrico-2-el-punto/)
+* [Lección 3 - La recta](/blog/dibujo/diedrico-3-la-recta/)
+* [Lección 4 - El plano](/blog/dibujo/diedrico-4-el-plano/)
+* [Lección 5 - Rectas características del plano e intersecciones](/blog/dibujo/diedrico-5-rectas-caracteristicas/)
+* [Lección 6 - Paralelismo](/blog/dibujo/diedrico-6-paralelismo/)
 
 4º entrega del curso de diédrico, este esta lección daremos el plano, como se forman, hallar sus trazas, y tipos de planos.
 
@@ -52,13 +47,13 @@ En el primer caso, <span style="font-weight: bold;">a partir de dos rectas que s
 
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="https://i1.wp.com/3.bp.blogspot.com/_H4ctsPRjMs8/SjPNjMAFm5I/AAAAAAAAACQ/CUZB90gPv-Q/s1600-h/.1.JPG" data-rel="lightbox-2" title=""><img id="BLOGGER_PHOTO_ID_5346843187019619218" style="display: block; margin: 0px auto 10px; text-align: center; cursor: hand; width: 249px; height: 174px;" src="https://i0.wp.com/3.bp.blogspot.com/_H4ctsPRjMs8/SjPNjMAFm5I/AAAAAAAAACQ/CUZB90gPv-Q/s400/.1.JPG" alt="" border="0" data-recalc-dims="1" /></a>
 
-Como podéis ver en la imagen, I&#8217; está en línea con I, por lo que se cortan las rectas (no sólo se cruzan).
+Como podéis ver en la imagen, I' está en línea con I, por lo que se cortan las rectas (no sólo se cruzan).
 
 Para formar el plano, debemos hallar las trazas de esas rectas:
   
 1. r y s cortan en la línea de tierra en Vs y Vr.
   
-2. r&#8217; y s&#8217; cortan en la línea de tierra en H&#8217;r y H&#8217;s.
+2. r' y s' cortan en la línea de tierra en H'r y H's.
   
 3. Hallamos las proyecciones homónimas.
 
@@ -66,7 +61,7 @@ Para formar el plano, debemos hallar las trazas de esas rectas:
 
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="https://i1.wp.com/3.bp.blogspot.com/_H4ctsPRjMs8/SjPNrCuxVMI/AAAAAAAAACg/E8pZasWrFTY/s1600-h/.3.JPG" data-rel="lightbox-4" title=""><img id="BLOGGER_PHOTO_ID_5346843321970021570" style="display: block; margin: 0px auto 10px; text-align: center; cursor: hand; width: 249px; height: 174px;" src="https://i0.wp.com/3.bp.blogspot.com/_H4ctsPRjMs8/SjPNrCuxVMI/AAAAAAAAACg/E8pZasWrFTY/s400/.3.JPG" alt="" border="0" data-recalc-dims="1" /></a>
 
-4. Para hallar las trazas del plano, unimos Hs con Hr, y V&#8217;r con V&#8217;s.
+4. Para hallar las trazas del plano, unimos Hs con Hr, y V'r con V's.
 
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="https://i0.wp.com/1.bp.blogspot.com/_H4ctsPRjMs8/SjPNvLrj8uI/AAAAAAAAACo/8qCGuXpcBIQ/s1600-h/.4.JPG" data-rel="lightbox-5" title=""><img id="BLOGGER_PHOTO_ID_5346843393091957474" style="display: block; margin: 0px auto 10px; text-align: center; cursor: hand; width: 249px; height: 174px;" src="https://i1.wp.com/1.bp.blogspot.com/_H4ctsPRjMs8/SjPNvLrj8uI/AAAAAAAAACo/8qCGuXpcBIQ/s400/.4.JPG" alt="" border="0" data-recalc-dims="1" /></a>
 

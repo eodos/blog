@@ -37,7 +37,7 @@ Ambos programas los tienes disponibles gratuitamente en Cydia, buscando por sus 
   </p>
   
   <p>
-    p style=&#8221;margin-top: 13px; margin-right: 0px; margin-bottom: 13px; margin-left: 0px; padding: 0px;&#8221;>
+    p style="margin-top: 13px; margin-right: 0px; margin-bottom: 13px; margin-left: 0px; padding: 0px;">
     
     <center>
     </center>

@@ -21,42 +21,43 @@ categories:
 tags:
   - Axonometrico
 ---
-<span style="font-weight:bold;">Índice</span>  
-[Lección 1 - Conceptos básicos](http://eodos0.blogspot.com/2009/06/axonometrico-1-conceptos-basicos.html)  
-[Lección 2 - Abatimientos y figuras planas](http://eodos0.blogspot.com/2009/06/axonometrico-2-abatimientos-y-figuras.html)  
-[Lección 3 - Figuras en 3D, Pirámide](http://eodos0.blogspot.com/2009/06/axonometrico-3-figuras-en-3d-piramide.html)  
-[Lección 4 - Cubo](http://eodos0.blogspot.com/2009/06/axonometrico-4-cubo.html)
+#Índice
 
-<span style="font-weight:bold;">¿Para qué sirve el sistema axonométrico?</span>
+* [Lección 1 - Conceptos básicos](/blog/dibujo/axonometrico-1-conceptos-basicos)
+* [Lección 2 - Abatimientos y figuras planas](/blog/dibujo/axonometrico-2-abatimientos-y-figuras-planas)
+* [Lección 3 - Figuras en 3D, Pirámide](/blog/dibujo/axonometrico-3-figuras-en-3d-piramide)
+* [Lección 4 - Cubo](/blog/dibujo/axonometrico-4-cubo)
+
+#¿Para qué sirve el sistema axonométrico?
 
 Sirve para suplir las carencias del sistema diédrico, y poder representar un figura de forma rápida y sin apenas conocimientos previos.
 
-El sistema axonométrico <span style="font-weight:bold;">se divide en: oblícuo y ortogonal.</span>
+El sistema axonométrico **se divide en: oblícuo y ortogonal.**
 
-<span style="font-weight:bold;">El ortogonal,</span> al igual que el sistema diédrico, tiene las proyecciones perpendiculares a los planos de proyección.
+**El ortogonal**, al igual que el sistema diédrico, tiene las proyecciones perpendiculares a los planos de proyección.
 
 A su vez, el ortogonal se divide en:
 
-<span style="font-weight:bold;">- Isométrico: </span>los ejes forman entre sí ángulos iguales, 120º (360º:3)
+**- Isométrico:** los ejes forman entre sí ángulos iguales, 120º (360º:3)
 
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="https://i1.wp.com/3.bp.blogspot.com/_H4ctsPRjMs8/SjoSEuaQqmI/AAAAAAAAAEw/LiF5vBmpTQU/s1600-h/ISO.PNG" data-rel="lightbox-0" title=""><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 250px;" src="https://i0.wp.com/3.bp.blogspot.com/_H4ctsPRjMs8/SjoSEuaQqmI/AAAAAAAAAEw/LiF5vBmpTQU/s400/ISO.PNG" border="0" alt="" id="BLOGGER_PHOTO_ID_5348607379842837090" data-recalc-dims="1" /></a>
 
-<span style="font-weight:bold;">- Dimétrico:</span> forman 2 ángulos iguales y uno desigual    
+**- Dimétrico:** forman 2 ángulos iguales y uno desigual    
 En este caso, van a formar ángulos de 150º y de 60º
 
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="https://i1.wp.com/4.bp.blogspot.com/_H4ctsPRjMs8/SjoSLord67I/AAAAAAAAAE4/cCeEmQ1Q-gE/s1600-h/dime.png" data-rel="lightbox-1" title=""><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 250px;" src="https://i1.wp.com/4.bp.blogspot.com/_H4ctsPRjMs8/SjoSLord67I/AAAAAAAAAE4/cCeEmQ1Q-gE/s400/dime.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5348607498563480498" data-recalc-dims="1" /></a>
 
-<span style="font-weight:bold;">- Trimétrico:</span> forman los 3 ángulos desiguales    
+**- Trimétrico:** forman los 3 ángulos desiguales    
 En el ejemplo, forman 90º, 120º y 150º.
 
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="https://i2.wp.com/4.bp.blogspot.com/_H4ctsPRjMs8/SjoSUCdf3TI/AAAAAAAAAFA/_Ipx2uhRHvg/s1600-h/trime.png" data-rel="lightbox-2" title=""><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 250px;" src="https://i0.wp.com/4.bp.blogspot.com/_H4ctsPRjMs8/SjoSUCdf3TI/AAAAAAAAAFA/_Ipx2uhRHvg/s400/trime.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5348607642923162930" data-recalc-dims="1" /></a>
 
-<span style="font-weight:bold;">En el sistema axonométrico oblícuo</span>, las proyecciones no son perpendiculares, sino que forman otros ángulos.
+**En el sistema axonométrico oblícuo**, las proyecciones no son perpendiculares, sino que forman otros ángulos.
 
 A su vez, se divide en:  
-<span style="font-weight:bold;">- Perspectiva caballera.<br />- Perspectiva militar.<br />- Perspectiva egipcia.</span>
+**- Perspectiva caballera.<br />- Perspectiva militar.<br />- Perspectiva egipcia.**
 
-<span style="font-weight:bold;">Pero, ¿de dónde vienen esos ejes?</span>
+#Pero, ¿de dónde vienen esos ejes?
 
 Tenemos 3 planos en el espacio que se cortan con forma piramidal. Sus proyecciones son perpendiculares al plano.
 
@@ -66,4 +67,4 @@ Si tenemos la proyección de un segmento AB en el eje X, va a tener su proyecci�
 
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="https://i0.wp.com/4.bp.blogspot.com/_H4ctsPRjMs8/SjoUoo3FcKI/AAAAAAAAAFY/Pbo2q2d-UCk/s1600-h/2.png" data-rel="lightbox-4" title=""><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 250px;" src="https://i1.wp.com/4.bp.blogspot.com/_H4ctsPRjMs8/SjoUoo3FcKI/AAAAAAAAAFY/Pbo2q2d-UCk/s400/2.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5348610195851669666" data-recalc-dims="1" /></a>
 
-Para ello debemos usar el <span style="font-weight:bold;">coeficiente de reducción</span> o hacer un <span style="font-weight:bold;">abatimiento.</span>
+Para ello debemos usar el **coeficiente de reducción** o hacer un **abatimiento.**

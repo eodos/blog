@@ -34,7 +34,7 @@ Para solucionarlo, y volver a poner el Grub, tenéis que:
 
 > find /boot/grub/stage1
 
-La salida será estilo &#8220;(hd0,2)&#8221;. Siendo 0 y 2 dos número que varían según tus particiones.
+La salida será estilo "(hd0,2)". Siendo 0 y 2 dos número que varían según tus particiones.
 
 > root (hd0,2)
 
@@ -50,7 +50,7 @@ Ya en nuestra distro:
 
 > sudo kate /boot/grub/menu.lst
 
-Sustituid por &#8220;gedit&#8221; si usáis gnome, o por vuestro editor favorito.
+Sustituid por "gedit" si usáis gnome, o por vuestro editor favorito.
 
 2. Añadimos las siguientes líneas:
 

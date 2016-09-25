@@ -31,7 +31,7 @@ Actualizar Chrome a la versión 3 (la beta) os dará varias funcionalidades nuev
 
 · Soporte para HTML5 (para comprobar si tenéis entrad a http://youtube.com/html5 ).  
 · Jump List para Windows 7.  
-· Etc&#8230;
+· Etc...
 
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="https://i1.wp.com/2.bp.blogspot.com/_H4ctsPRjMs8/Spw_zV9u_2I/AAAAAAAAAJQ/ztvnOcftWjw/s1600-h/jumplist.jpg" data-rel="lightbox-1" title=""><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 267px; height: 400px;" src="https://i0.wp.com/2.bp.blogspot.com/_H4ctsPRjMs8/Spw_zV9u_2I/AAAAAAAAAJQ/ztvnOcftWjw/s400/jumplist.jpg" border="0" alt="" id="BLOGGER_PHOTO_ID_5376242206475485026" data-recalc-dims="1" /></a>
 

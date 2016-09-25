@@ -19,7 +19,7 @@ categories:
 tags:
   - Linux
 ---
-Leo en [120Linux](http://120linux.com/40-combinaciones-teclas-ubuntu/) una interesante recopilación de 40 combinaciones muy útiles de teclas para Ubuntu, pero totalmente compatibles con Kubuntu, Xubuntu&#8230;
+Leo en [120Linux](http://120linux.com/40-combinaciones-teclas-ubuntu/) una interesante recopilación de 40 combinaciones muy útiles de teclas para Ubuntu, pero totalmente compatibles con Kubuntu, Xubuntu...
 
 <span style="font-weight:bold;">1) Ctrl+A =</span> Seleccionar todo (En Documentos, Firefox, Nautilus, etc, no funciona en Terminal)  
 <span style="font-weight:bold;">2) Ctrl+C =</span> Copiar (En Documentos, Firefox, Nautilus, etc, no funciona en Terminal)  

@@ -115,7 +115,7 @@ Realizamos lo mismo con la librería **json-parser**.
 > cp json.c /srv/http/cgi-bin/json.c
 > cp json.h /srv/http/cgi-bin/json.h</pre>
 
-Es necesario modificar el archivo **json-builder.h** y cambiar la la llamada a la librería **<json.h>** a **&#8220;json.h&#8221;**. Pues en lugar de ser una librería del sistema es una librería que se encuentra en el directorio actual. Por defecto viene como librería del sistema puesto que se puede compilar para ser usada de esta manera. Pero debido a los múltiples errores obtenidos se realiza de esta forma.
+Es necesario modificar el archivo **json-builder.h** y cambiar la la llamada a la librería **<json.h>** a **"json.h"**. Pues en lugar de ser una librería del sistema es una librería que se encuentra en el directorio actual. Por defecto viene como librería del sistema puesto que se puede compilar para ser usada de esta manera. Pero debido a los múltiples errores obtenidos se realiza de esta forma.
 
 Es importante además añadir el argumento **-lm** al compilar y realizar el **linkado** adecuado.
 
@@ -160,8 +160,8 @@ El script llama en primer lugar a las librerías utilizadas:
 
   * <stdio.h>
   * <stdlib.h>
-  * &#8220;functions.h&#8221;
-  * &#8220;json-builder.h&#8221;
+  * "functions.h"
+  * "json-builder.h"
 
 A continuación reserva espacio en memoria para las variables que va a utilizar y guarda los parámetros pasados en la URL en una variable de tipo _(char *)_. A continuación separa los parámetros de la lista usando el método **strtok** usando como **token** el símbolo _&_. A continuación, para cada elemento de la lista separado y almacenado en un array char, accede al fichero correspondiente usando la función **ruta** para calcular el directorio en el que se encuentra y lo guarda en un array char usando la función **sscanf**. Crea el objeto json, añade cada par variable / valor leído, reserva espacio en memoria para el objeto y lo convierte.
 

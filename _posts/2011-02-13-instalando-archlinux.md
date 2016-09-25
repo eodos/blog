@@ -41,7 +41,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  Desde que empezamos la instalación, comprobamos que poco tiene esta que ver con la de otras distribuciones más orientadas a un público novel, como puede ser Ubuntu. Desde la primera pantalla tenemos que configurar cada uno de los parámetros que configurar el sistema operativo, desde repositorios a activar, si deseas instalar grub&#8230;
+  Desde que empezamos la instalación, comprobamos que poco tiene esta que ver con la de otras distribuciones más orientadas a un público novel, como puede ser Ubuntu. Desde la primera pantalla tenemos que configurar cada uno de los parámetros que configurar el sistema operativo, desde repositorios a activar, si deseas instalar grub...
 </p>
 
 <p style="text-align: justify;">
@@ -49,7 +49,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  Otras características de esta distribución, es que en vez de usar apt-get como Debian (y por tanto Ubuntu, Kubuntu&#8230;) usa <strong>pacman</strong>, que nada tiene que envidiar, ya que cumple a la perfección su cometido, y hasta cuenta con repositorios donde los usuarios suben programas y los optimizan entre todos.
+  Otras características de esta distribución, es que en vez de usar apt-get como Debian (y por tanto Ubuntu, Kubuntu...) usa <strong>pacman</strong>, que nada tiene que envidiar, ya que cumple a la perfección su cometido, y hasta cuenta con repositorios donde los usuarios suben programas y los optimizan entre todos.
 </p>
 
 <p style="text-align: justify;">

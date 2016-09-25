@@ -23,7 +23,7 @@ tags:
 ---
 Al final ha salido una versión del popular complemento de firefox [Cooliris](http://cooliris.com/).
 
-Para los que no lo conozcáis, esta extensión permite buscar imágenes, vídeos, y demás contenido multimedia de las principales fuentes (Youtube, Flickr, Amazon, Google, Yahoo&#8230;).
+Para los que no lo conozcáis, esta extensión permite buscar imágenes, vídeos, y demás contenido multimedia de las principales fuentes (Youtube, Flickr, Amazon, Google, Yahoo...).
 
 <a href="https://i2.wp.com/1.bp.blogspot.com/_H4ctsPRjMs8/SeuTMHG3CqI/AAAAAAAAACA/oXzCCJKAgf4/s1600-h/phpvOfXVPPM.jpg" data-rel="lightbox-0" title=""><img id="BLOGGER_PHOTO_ID_5326512820571277986" style="display: block; margin: 0px auto 10px; text-align: center; cursor: hand; width: 350px; height: 262px;" src="https://i0.wp.com/1.bp.blogspot.com/_H4ctsPRjMs8/SeuTMHG3CqI/AAAAAAAAACA/oXzCCJKAgf4/s400/phpvOfXVPPM.jpg" alt="" border="0" data-recalc-dims="1" /></a>
 

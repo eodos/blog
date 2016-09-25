@@ -89,7 +89,7 @@ Funciona correctamente, comprobándose que la salida conmuta al echar unas gotas
 
 Para comprobar el funcionamiento de la placa en relación a la obtención de los valores de los sensores y su posterior comunicación a la Raspberry Pi mediante I2C se modifica el programa que se usó para probar el sensor de temperatura.
 
-Cuando el Arduino reciba una cadena de caracteres que sea &#8220;RAIN&#8221;, enviará el valor como respuesta.
+Cuando el Arduino reciba una cadena de caracteres que sea "RAIN", enviará el valor como respuesta.
 
 &nbsp;
 

@@ -21,19 +21,14 @@ categories:
 tags:
   - Diedrico
 ---
-<span style="font-weight: bold;">Índice</span>
+#Índice
   
-[Lección 1 - Conceptos y fundamentos básicos](/dibujo/diedrico-1-conceptos/)
-  
-[Lección 2 - El punto](/dibujo/diedrico-2-el-punto/)
-  
-[Lección 3 - La recta](/dibujo/diedrico-3-la-recta/)
-  
-[Lección 4 - El plano](/dibujo/diedrico-4-el-plano/)
-  
-[Lección 5 - Rectas características del plano e intersecciones](/dibujo/diedrico-5-rectas-caracteristicas/)
-  
-[Lección 6 - Paralelismo](/dibujo/diedrico-6-paralelismo/)
+* [Lección 1 - Conceptos y fundamentos básicos](/blog/dibujo/diedrico-1-conceptos/)
+* [Lección 2 - El punto](/blog/dibujo/diedrico-2-el-punto/)
+* [Lección 3 - La recta](/blog/dibujo/diedrico-3-la-recta/)
+* [Lección 4 - El plano](/blog/dibujo/diedrico-4-el-plano/)
+* [Lección 5 - Rectas características del plano e intersecciones](/blog/dibujo/diedrico-5-rectas-caracteristicas/)
+* [Lección 6 - Paralelismo](/blog/dibujo/diedrico-6-paralelismo/)
 
 Hoy una nueva lección. En este caso hablaremos de cómo representar un punto en diédrico, conocer su visibilidad y reconocer a qué diedro pertenece.
 
@@ -49,7 +44,7 @@ Tenemos los planos de proyección, y un punto A en el espacio. Pues las proyecci
 
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="https://i2.wp.com/upload.wikimedia.org/wikibooks/es/9/90/Diedrico-punto.png" data-rel="lightbox-0" title=""><img style="display: block; margin: 0px auto 10px; text-align: center; cursor: hand; width: 250px; height: 264px;" src="https://i2.wp.com/upload.wikimedia.org/wikibooks/es/9/90/Diedrico-punto.png" alt="" border="0" data-recalc-dims="1" /></a>
 
-La proyección sobre el PV se nombra como A&#8217;, y la proyeccion horizontal como A.
+La proyección sobre el PV se nombra como A', y la proyeccion horizontal como A.
 
 Todo ello es en el espacio, y para pasarlo a diédrico tenemos que abatir el plano. ¿Cómo hacerlo? Pues muy sencillo: tenemos que girar el PH usando como eje la Línea de Tierra (LT), hasta dejarlo en línea con el PV.
 
@@ -65,7 +60,7 @@ Para averiguarlo, recurrimos al <span style="font-weight: bold;">alfabeto del pu
 
 En esa imagen, podéis ver 16 puntos situados sobre el espacio, uno de cada tipo.
 
-Empecemos: los puntos A, B, C y D pertenecen al 1º diedro, por lo que sus proyecciones estarán distribuídas de esta forma: A&#8217; encima de la línea de tierra, y A por debajo. Tienen cota y alejamiento positivos.
+Empecemos: los puntos A, B, C y D pertenecen al 1º diedro, por lo que sus proyecciones estarán distribuídas de esta forma: A' encima de la línea de tierra, y A por debajo. Tienen cota y alejamiento positivos.
   
 ¿Por qué el punto D tiene su proyección horizontal sobre la línea de tierra? Porque el mismo punto pertenece al plano horizontal.
   
@@ -89,4 +84,4 @@ Pasamos el 2º bisector, puntos E, F, G y H. Estos puntos tienen sus dos proyecc
 
 ¿Cuándo es visible un punto? Pues va a ser visible cuando esté en el primer cuadrante o diedro, pero esto no se va a indicar en el dibujo por ahora.
 
-Hasta aquí la 2º lección, mañana más&#8230;
+Hasta aquí la 2º lección, mañana más...

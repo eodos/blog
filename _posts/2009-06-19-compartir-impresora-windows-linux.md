@@ -28,7 +28,7 @@ tags:
 Inicio -> Panel de Control -> Conexiones de red
 
 Click en Configurar una red doméstica (menú de la izquierda).  
-Seleccionamos la opción &#8220;<span style="font-weight:bold;">Este equipo se conecta a internet a través de una puerta de enlace residencial o de otro equipo en mi red&#8221;.<br /></span>  
+Seleccionamos la opción "<span style="font-weight:bold;">Este equipo se conecta a internet a través de una puerta de enlace residencial o de otro equipo en mi red".<br /></span>  
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="https://i0.wp.com/2.bp.blogspot.com/_H4ctsPRjMs8/SjwAuWSe8OI/AAAAAAAAAIg/FrbxIqFN0xg/s1600-h/compartir2.JPG" data-rel="lightbox-0" title=""><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 300px;" src="https://i2.wp.com/2.bp.blogspot.com/_H4ctsPRjMs8/SjwAuWSe8OI/AAAAAAAAAIg/FrbxIqFN0xg/s400/compartir2.JPG" border="0" alt="" id="BLOGGER_PHOTO_ID_5349151253666394338" data-recalc-dims="1" /></a>
 
 Damos a siguiente  
@@ -44,7 +44,7 @@ Escogemos un nombre para el grupo de trabajo
 Ya tenemos creado el grupo de trabajo, ahora a la impresora.
 
 Inicio -> Panel de Control -> Impresoras  
-Click derecho en la impresora a compartir, vamos a la pestaña Compartir y seleccionamos la opción: <span style="font-weight:bold;">&#8220;Compartir esta impresora&#8221;</span>.
+Click derecho en la impresora a compartir, vamos a la pestaña Compartir y seleccionamos la opción: <span style="font-weight:bold;">"Compartir esta impresora"</span>.
 
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="https://i2.wp.com/4.bp.blogspot.com/_H4ctsPRjMs8/SjwAuABJBQI/AAAAAAAAAIY/FCT7lGW6ob0/s1600-h/compartir1.JPG" data-rel="lightbox-3" title=""><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 300px;" src="https://i0.wp.com/4.bp.blogspot.com/_H4ctsPRjMs8/SjwAuABJBQI/AAAAAAAAAIY/FCT7lGW6ob0/s400/compartir1.JPG" border="0" alt="" id="BLOGGER_PHOTO_ID_5349151247688074498" data-recalc-dims="1" /></a>
 
@@ -55,8 +55,8 @@ Click en <span style="font-weight:bold;">New Printer</span> (Nueva impresora).
 
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="https://i1.wp.com/4.bp.blogspot.com/_H4ctsPRjMs8/SjwAu1dS2WI/AAAAAAAAAI4/g67urb5AwlU/s1600-h/instant%C3%A1nea1.png" data-rel="lightbox-4" title=""><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 300px;" src="https://i1.wp.com/4.bp.blogspot.com/_H4ctsPRjMs8/SjwAu1dS2WI/AAAAAAAAAI4/g67urb5AwlU/s400/instant%C3%A1nea1.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5349151262033238370" data-recalc-dims="1" /></a>
 
-Escogemos <span style="font-weight:bold;">&#8220;New Network Printer&#8221;</span>  
-Escogemos &#8220;<span style="font-weight:bold;">Windows Printer via SAMBA&#8221;</span>
+Escogemos <span style="font-weight:bold;">"New Network Printer"</span>  
+Escogemos "<span style="font-weight:bold;">Windows Printer via SAMBA"</span>
 
 En la dirección escribimos:
 

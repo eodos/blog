@@ -47,9 +47,9 @@ Para que aparezca la _Side Bar_ sobre nuestro directorio de trabajo, nos dirigim
 
 ## Instalar Package Control
 
-**Package Control** es un plugin de **Sublime Text** que permite instalar paquetes muy fácilmente. Para instalarlo en **Sublime Text 2**, abrimos una terminal con _ctrl+&#8217;_ o desde _View > Show Console_ y pegamos el siguiente texto:
+**Package Control** es un plugin de **Sublime Text** que permite instalar paquetes muy fácilmente. Para instalarlo en **Sublime Text 2**, abrimos una terminal con _ctrl+'_ o desde _View > Show Console_ y pegamos el siguiente texto:
 
-> import urllib2,os,hashlib; h = &#8216;7183a2d3e96f11eeadd761d777e62404&#8217; + &#8216;e330c659d4bb41d3bdf022e94cab3cd0&#8217;; pf = &#8216;Package Control.sublime-package&#8217;; ipp = sublime.installed\_packages\_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install\_opener( urllib2.build\_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( &#8216;http://sublime.wbond.net/&#8217; + pf.replace(&#8216; &#8216;, &#8216;%20&#8217;)).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), &#8216;wb&#8217; ).write(by) if dh == h else None; print(&#8216;Error validating download (got %s instead of %s), please try manual install&#8217; % (dh, h) if dh != h else &#8216;Please restart Sublime Text to finish installation&#8217;)
+> import urllib2,os,hashlib; h = &#8216;7183a2d3e96f11eeadd761d777e62404' + &#8216;e330c659d4bb41d3bdf022e94cab3cd0'; pf = &#8216;Package Control.sublime-package'; ipp = sublime.installed\_packages\_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install\_opener( urllib2.build\_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( &#8216;http://sublime.wbond.net/' + pf.replace(&#8216; &#8216;, &#8216;%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), &#8216;wb' ).write(by) if dh == h else None; print(&#8216;Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else &#8216;Please restart Sublime Text to finish installation')
 
 &nbsp;
 
@@ -124,9 +124,9 @@ Instalamos el paquete con _Package Manager_. Vamos a _Preferences > Package Cont
 
 Vamos a configurarlo para que detecte **rvm**, **bundle** o **rbenv**, en el caso de que los tengamos instalados. Para ello vamos a _Preferences > Package Settings > Ruby Test > Settings - Default_ y modificamos las variables:
 
-  * &#8220;check\_for\_rbenv&#8221;: true,
-  * &#8220;check\_for\_rvm&#8221;: true,
-  * &#8220;check\_for\_bundler&#8221;: true,
+  * "check\_for\_rbenv": true,
+  * "check\_for\_rvm": true,
+  * "check\_for\_bundler": true,
 
 Comandos:
 

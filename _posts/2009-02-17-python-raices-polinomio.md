@@ -22,11 +22,12 @@ tags:
   - Programación
   - Python
 ---
-Ayer empecé con el Python, y hoy he compilado mi primer programa &#8220;útil&#8221;, que calcula las soluciones (x) de un polinomio que escribimos.
+Ayer empecé con el Python, y hoy he compilado mi primer programa "útil", que calcula las soluciones (x) de un polinomio que escribimos.
 
 Os pego el código por si queréis echarle un vistazo.
 
-<pre class="lang:python decode:true">#!/usr/bin/env python
+```python
+#!/usr/bin/env python
 print "Este programa calculara las raices de un polinomio"
 a=float(raw_input("Introduce el valor correspondiente a x^2 (a): "))
 b=float(raw_input("Introduce el valor correspondiente a x (b): "))
@@ -42,4 +43,5 @@ k=float(d)-float(i)
 l=float(j)/float(g)
 m=float(k)/float(g)
 print "Las raices de " ,str(a) ,"x^2" ,str(b) ,"x" ,str(c) ,"son: " ,str(l) ,"y " ,str(m)
-raw_input()</pre>
+raw_input()
+```

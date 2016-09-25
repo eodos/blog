@@ -25,7 +25,7 @@ EL otro día cansado de tener que imprimir todos los documentos que hace mi herm
 
 En <span style="font-weight:bold;">Linux</span>
 
-Lo primero que tenéis que hacer, es abrir el cups (el &#8220;driver&#8221; de impresión en Unix). Podéis acceder desde:
+Lo primero que tenéis que hacer, es abrir el cups (el "driver" de impresión en Unix). Podéis acceder desde:
 
 - Vuestra ip interna con el puerto 631    
 192.168.1.*:631

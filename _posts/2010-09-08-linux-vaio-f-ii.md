@@ -33,7 +33,7 @@ tags:
 </div>
 
 <div>
-  <span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;">Para el touchpad, fue suficiente con añadir <b>&#8220;i8042.nopnp&#8221;</b> a la entrada del kernel en el grub. La tarjeta de red también funcionó directamente. Únicamente tuve problemas para autentificarme en redes WEP, que lo solucioné cambiando la contraseña por una WPA. Intentaré solucionarlo más adelante.</span></span>
+  <span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;">Para el touchpad, fue suficiente con añadir <b>"i8042.nopnp"</b> a la entrada del kernel en el grub. La tarjeta de red también funcionó directamente. Únicamente tuve problemas para autentificarme en redes WEP, que lo solucioné cambiando la contraseña por una WPA. Intentaré solucionarlo más adelante.</span></span>
 </div>
 
 <div>

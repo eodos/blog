@@ -22,11 +22,10 @@ tags:
   - numeros
   - Python
 ---
-Este programa lo hice hace tiempo, pero lo pongo como recopilación.
+Este programa lo hice hace tiempo, pero lo pongo como recopilación. Compara 5 números e imprime el mayor:
 
-Uno que compara 5 números y te dice el mayor:
-
-<pre class="lang:python decode:true ">#!/usr/bin/env python
+```python
+#!/usr/bin/env python
 
 print "Este programa te permite calcular el numero mas alto de 5 numeros."
 
@@ -49,6 +48,5 @@ if d>maximo:
 if e>maximo:
   maximo=e
 
-print "El numero mas alto es:" ,str(maximo)</pre>
-
-&nbsp;
+print "El numero mas alto es:" ,str(maximo)
+```

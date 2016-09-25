@@ -21,19 +21,14 @@ categories:
 tags:
   - Diedrico
 ---
-<span style="font-weight: bold;">Índice</span>
+#Índice
   
-[Lección 1 - Conceptos y fundamentos básicos](/dibujo/diedrico-1-conceptos/)
-  
-[Lección 2 - El punto](/dibujo/diedrico-2-el-punto/)
-  
-[Lección 3 - La recta](/dibujo/diedrico-3-la-recta/)
-  
-[Lección 4 - El plano](/dibujo/diedrico-4-el-plano/)
-  
-[Lección 5 - Rectas características del plano e intersecciones](/dibujo/diedrico-5-rectas-caracteristicas/)
-  
-[Lección 6 - Paralelismo](/dibujo/diedrico-6-paralelismo/)
+* [Lección 1 - Conceptos y fundamentos básicos](/blog/dibujo/diedrico-1-conceptos/)
+* [Lección 2 - El punto](/blog/dibujo/diedrico-2-el-punto/)
+* [Lección 3 - La recta](/blog/dibujo/diedrico-3-la-recta/)
+* [Lección 4 - El plano](/blog/dibujo/diedrico-4-el-plano/)
+* [Lección 5 - Rectas características del plano e intersecciones](/blog/dibujo/diedrico-5-rectas-caracteristicas/)
+* [Lección 6 - Paralelismo](/blog/dibujo/diedrico-6-paralelismo/)
 
 Tras algunos días con escasa actividad, voy a explicaros de forma básica y fácil el sistema diédrico, uno de los sistemas de representación más usados.
 
@@ -41,17 +36,17 @@ Por si alguno no lo sabía, soy Moderador y Colaborador de [Trazoide](http://tra
 
 Bueno al lío.
 
-<span style="font-weight: bold;">¿Qué es el Sistema Diédrico?</span>
+#¿Qué es el Sistema Diédrico?
 
 Pues explicado de forma breve, es un sistema de representación del espacio sobre un plano. Es un sistema de proyección ortogonal, lo que quiere decir que se representa de forma perpendicular al plano de proyección.
 
-<span style="font-weight: bold;">¿Para qué puede servirme aprenderlo?</span>
+#¿Para qué puede servirme aprenderlo?
 
 Pues os puede servir si vais a estudiar alguna ingeniería o arquitectura, que ya su función principal es la de representar piezas de maquinaria.
 
-<span style="font-weight: bold;">Fundamentos básicos</span>
+#Fundamentos básicos
 
-La representación en diédrico se basa en 2 o 3 proyecciones. Se conocen como &#8220;planta&#8221;, &#8220;alzado&#8221; y &#8220;perfil&#8221;. El perfil no es necesario usarlo siempre, ya que se trata de un plano auxiliar. La planta es la proyección de la figura sobre el <span style="font-weight: bold;">plano horizontal de poryección</span>, y el alzado sobre el <span style="font-weight: bold;">plano vertical de proyección</span>.
+La representación en diédrico se basa en 2 o 3 proyecciones. Se conocen como "planta", "alzado" y "perfil". El perfil no es necesario usarlo siempre, ya que se trata de un plano auxiliar. La planta es la proyección de la figura sobre el <span style="font-weight: bold;">plano horizontal de poryección</span>, y el alzado sobre el <span style="font-weight: bold;">plano vertical de proyección</span>.
 
 También tenemos la <span style="font-weight: bold;">Línea de tierra</span>, que es la recta donde se corta el plano horizontaal de proyección (PH) con el plano vertical de proyección (PV).
 

@@ -21,7 +21,7 @@ tags:
 ---
 # Preparamos el entorno de compilación
 
-Instalamos el paquete kdelibs-devel, que contiene lo necesario para compiar C, C++&#8230;
+Instalamos el paquete kdelibs-devel, que contiene lo necesario para compiar C, C++...
 
 `sudo yum install kdelibs-devel`
 

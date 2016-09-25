@@ -22,19 +22,14 @@ tags:
   - Diedrico
   - Rectas
 ---
-<span style="font-weight: bold;">Índice</span>
+#Índice
   
-[Lección 1 - Conceptos y fundamentos básicos](/dibujo/diedrico-1-conceptos/)
-  
-[Lección 2 - El punto](/dibujo/diedrico-2-el-punto/)
-  
-[Lección 3 - La recta](/dibujo/diedrico-3-la-recta/)
-  
-[Lección 4 - El plano](/dibujo/diedrico-4-el-plano/)
-  
-[Lección 5 - Rectas características del plano e intersecciones](/dibujo/diedrico-5-rectas-caracteristicas/)
-  
-[Lección 6 - Paralelismo](/dibujo/diedrico-6-paralelismo/)
+* [Lección 1 - Conceptos y fundamentos básicos](/blog/dibujo/diedrico-1-conceptos/)
+* [Lección 2 - El punto](/blog/dibujo/diedrico-2-el-punto/)
+* [Lección 3 - La recta](/blog/dibujo/diedrico-3-la-recta/)
+* [Lección 4 - El plano](/blog/dibujo/diedrico-4-el-plano/)
+* [Lección 5 - Rectas características del plano e intersecciones](/blog/dibujo/diedrico-5-rectas-caracteristicas/)
+* [Lección 6 - Paralelismo](/blog/dibujo/diedrico-6-paralelismo/)
 
 Hoy aprenderemos a representar una recta, conocer los distintos tipos de recta según su posición, y analizar su visibilidad.
 
@@ -42,15 +37,15 @@ Para empezar, saber que las proyecciones de una recta va a ser o una recta, o un
 
 Una recta tiene 2 <span style="font-weight: bold;">trazas</span>, que son las instersecciones de la recta en el espacio con los 2 planos de proyección. Si la recta se llama r, la intersección con el plano vertical se conocerá como Vr, y la intersección con el plano horizontal será Hr.
 
-Esas trazas, Hr y Vr, tenemos que proyectarlas, y así obtendremos H&#8217;r, Hr, V&#8217;r y Vr. Para saber como proyectar un punto, id a la [lección 2](http://eodos0.blogspot.com/2009/06/diedrico-2-el-punto.html).
+Esas trazas, Hr y Vr, tenemos que proyectarlas, y así obtendremos H'r, Hr, V'r y Vr. Para saber como proyectar un punto, id a la [lección 2](http://eodos0.blogspot.com/2009/06/diedrico-2-el-punto.html).
 
-Uniendo Vr con Hr, y H&#8217;r con V&#8217;r obtendremos las proyecciones de la recta (r y r&#8217;) en diédrico.
+Uniendo Vr con Hr, y H'r con V'r obtendremos las proyecciones de la recta (r y r') en diédrico.
 
 Ilustremos un poco:
 
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="https://i1.wp.com/html.rincondelvago.com/000491968.png" data-rel="lightbox-0" title=""><img style="display: block; margin: 0px auto 10px; text-align: center; cursor: hand; width: 443px; height: 355px;" src="https://i1.wp.com/html.rincondelvago.com/000491968.png" alt="" border="0" data-recalc-dims="1" /></a>
 
-Por si no lo veis claro, las trazas siempre van a estar sobre los planos de proyección, estando Vr y H&#8217;r sobre la línea de tierra, y V&#8217;r y Hr donde corte la recta.
+Por si no lo veis claro, las trazas siempre van a estar sobre los planos de proyección, estando Vr y H'r sobre la línea de tierra, y V'r y Hr donde corte la recta.
 
 <span style="font-weight: bold;">Tpos de recta</span>
 
@@ -90,11 +85,11 @@ Aquí empieza un poco la dificultad. Esta recta no corta a ningún plano, es par
 
 <span style="font-weight: bold;">6) Recta de perfil</span>
 
-Mi favorita, pero la más difícil de todas. Esta recta es secante a los dos planos de proyección, por lo que tendrá 2 trazas. Es perpendicular a la línea de tierra, y forma 90º grados con ella. Por lo que sus proyecciones será una recta, donde coincida r y r&#8217;. Para hallar su inclinación respecto a los planos de proyección, debemos usar un plano de perfil.
+Mi favorita, pero la más difícil de todas. Esta recta es secante a los dos planos de proyección, por lo que tendrá 2 trazas. Es perpendicular a la línea de tierra, y forma 90º grados con ella. Por lo que sus proyecciones será una recta, donde coincida r y r'. Para hallar su inclinación respecto a los planos de proyección, debemos usar un plano de perfil.
 
 Este plano se sitúa perpendicular a los otros dos, y sus proyecciones se hallan así:
 
-La proyección horizontal (A) se alarga hasta cortar con el plano auxiliar, y entonces haciendo centro en la intersección de la línea de tierra con el plano, hacemos un giro. Por último prolongamos A&#8217; y donde corten estará la 3º proyección de este punto (A&#8221;).
+La proyección horizontal (A) se alarga hasta cortar con el plano auxiliar, y entonces haciendo centro en la intersección de la línea de tierra con el plano, hacemos un giro. Por último prolongamos A' y donde corten estará la 3º proyección de este punto (A").
 
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="https://i1.wp.com/html.rincondelvago.com/000491964.png" data-rel="lightbox-6" title=""><img style="display: block; margin: 0px auto 10px; text-align: center; cursor: hand; width: 413px; height: 383px;" src="https://i1.wp.com/html.rincondelvago.com/000491964.png" alt="" border="0" data-recalc-dims="1" /></a>
 

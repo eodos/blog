@@ -38,7 +38,7 @@ tags:
 <pre class="lang:sh decode:true ">> pacman -S i2c-tools</pre>
 
 <p style="text-align: justify;">
-   Después añadimos el módulo para que se cargue con el kernel, añadiendo &#8220;i2c-dev&#8221; al fichero <em>/etc/modules-load.d/raspberrypi.conf</em>
+   Después añadimos el módulo para que se cargue con el kernel, añadiendo "i2c-dev" al fichero <em>/etc/modules-load.d/raspberrypi.conf</em>
 </p>
 
 <p style="text-align: justify;">

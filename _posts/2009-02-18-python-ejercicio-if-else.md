@@ -24,21 +24,21 @@ tags:
   - if
   - Python
 ---
-Tras leerme la lección de condicionales he decidido compilar algún programa sencillo.
+Tras leerme la lección de condicionales he decidido hacer algún programa sencillo.
 
-<pre class="lang:python decode:true ">#!/usr/bin/env python
+```python
+#!/usr/bin/env python
 edad = int(raw_input('Cuantos anos tienes '))
 if edad>=90:
   print "Tienes 90 anos o mas..."
 else:
-  if edad<=0:  
+  if edad<=0:
     print "Has metido una edad no valida"
-  else:  
+  else:
     if edad<18:
        print 'Eres menor de edad'
     else:
        print 'Eres mayor de edad'
 print 'Hasta la proxima'
-raw_input()</pre>
-
-&nbsp;
+raw_input()
+```

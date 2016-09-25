@@ -66,7 +66,7 @@ Obteniendo la salida:
 
 ...</pre>
 
-Observamos que obtenemos varios valores de woeid, de varias localizaciones cercanas a la ciudad de Málaga (Ciudad, Aeropuerto&#8230;). En nuestro caso nos vale con quedarnos con el primero, el general de Málaga.
+Observamos que obtenemos varios valores de woeid, de varias localizaciones cercanas a la ciudad de Málaga (Ciudad, Aeropuerto...). En nuestro caso nos vale con quedarnos con el primero, el general de Málaga.
 
 Si ahora queremos obtener el pronóstico meteorológico para esta localización podemos anidar las peticiones:
 

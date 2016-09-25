@@ -19,11 +19,12 @@ categories:
 tags:
   - Axonometrico
 ---
-<span style="font-weight:bold;">Índice</span>  
-[Lección 1 - Conceptos básicos](http://eodos0.blogspot.com/2009/06/axonometrico-1-conceptos-basicos.html)  
-[Lección 2 - Abatimientos y figuras planas](http://eodos0.blogspot.com/2009/06/axonometrico-2-abatimientos-y-figuras.html)  
-[Lección 3 - Figuras en 3D, Pirámide](http://eodos0.blogspot.com/2009/06/axonometrico-3-figuras-en-3d-piramide.html)  
-[Lección 4 - Cubo](http://eodos0.blogspot.com/2009/06/axonometrico-4-cubo.html)
+#Índice
+
+* [Lección 1 - Conceptos básicos](/blog/dibujo/axonometrico-1-conceptos-basicos)
+* [Lección 2 - Abatimientos y figuras planas](/blog/dibujo/axonometrico-2-abatimientos-y-figuras-planas)
+* [Lección 3 - Figuras en 3D, Pirámide](/blog/dibujo/axonometrico-3-figuras-en-3d-piramide)
+* [Lección 4 - Cubo](/blog/dibujo/axonometrico-4-cubo)
 
 Dado el siguiente triángulo, nos piden que hagamos una pirámide de altura = 30mm.
 

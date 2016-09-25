@@ -97,7 +97,7 @@ Como comprobamos leyendo del puerto serial, el sensor funciona correctamente.
 
 ## Petición y envío por I2C de la temperatura
 
-El siguiente programa tiene como objetivo que la Raspberry Pi realice una petición por I2C de la temperatura enviando la cadena &#8220;TEMP&#8221; y el Arduino, al recibirla le responda con el valor de la temperatura.
+El siguiente programa tiene como objetivo que la Raspberry Pi realice una petición por I2C de la temperatura enviando la cadena "TEMP" y el Arduino, al recibirla le responda con el valor de la temperatura.
 
 &nbsp;
 
@@ -180,7 +180,7 @@ Existe una librería llamada **WiringPi** que permite el envío y recepción de 
 
 El propósito de programa para poder probar la recepción de la temperatura por I2C realizará una única petición al ejecutarse en forma de script CGI. En las siguientes versiones realizará comprobaciones periódicas con una frecuencia que leerá de un fichero.
 
-El programa establece en primer lugar la conexión a través del puerto **/dev/i2c-0** con los comandos **open** y **ioctl**. A continuación escribe en el puerto la cadena de caracteres &#8220;TEMP&#8221; y si todos los bytes se han enviado correctamente (4), espera un tiempo y realiza la operación de lectura en un buffer array char. Cuando recibe los 4 bytes de la temperatura, realiza una transformación a entero con el comando **atoi** para a continuación convertirlo en flotante y así recuperar los dos dígitos decimales.
+El programa establece en primer lugar la conexión a través del puerto **/dev/i2c-0** con los comandos **open** y **ioctl**. A continuación escribe en el puerto la cadena de caracteres "TEMP" y si todos los bytes se han enviado correctamente (4), espera un tiempo y realiza la operación de lectura en un buffer array char. Cuando recibe los 4 bytes de la temperatura, realiza una transformación a entero con el comando **atoi** para a continuación convertirlo en flotante y así recuperar los dos dígitos decimales.
 
 Además resulta conveniente anotar la hora a la que se ha realizado la lectura, por lo tanto se calcula con una función que se ha creado llamada **char * getTime()**, la cual hace uso de la librería **<time.h>**.
 
