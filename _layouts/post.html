@@ -1,104 +1,67 @@
 ---
 layout: default
 ---
-
-<br/>
-
-<div class="post-title">
-    <div class="logo">
-        {% if page.logo %}
-            <i class="fa fa-{{ page.logo }} fa-fw"></i>
-        {% else %}
-            <i class="fa fa-question-circle fa-fw"></i>
-        {% endif %}
-    </div>
-    <div class="title">
-        <h2>{{ page.title }}</h2>
-        {% if page.date %}
-        <span>
-            <time datetime="{{ page.date | date_to_xmlschema }}">
-                {{ page.date | date: site.date_format }}
-                {% if site.disqus_shortname %}
-                    &middot;
-                    <a href="{{ site.url }}{{ page.url }}index.html#disqus_thread" data-disqus-identifier="{{ page.url }}"></a>
-                    {% if page.update_date %}
-                        &middot;
-                        Updated {{ page.update_date | date: site.date_format }}
-                    {% endif %}
+<div class="post-content well">
+<article class="content">
+    <div class="post">{{ content }}</div>
+    <hr />
+    {% include share-page.html %}
+</article>
+<hr />
+{% assign hasSimilar = '' %}
+{% for post in site.posts  %}
+    {% assign postHasSimilar = false %}
+    {% for tag in post.categories %}
+        {% for thisTag in page.categories %}
+            {% if postHasSimilar == false and hasSimilar.size < 6 and post != page and tag == thisTag %}
+                {% if hasSimilar.size == 0 %}
+                <div class="panel-body">
+                <h4>Related Posts</h4>
+                <ul>
                 {% endif %}
-            </time>
-        </span>
-        {% endif %}
-    </div>
-</div>
-
-<div>
-    <br/>
-</div>
-
-{{ content }}
-
-<div class="sharing">
-    <br/>
-    <br/>
-<!-- Make an animated slide out drawer later -->
-    <ul>
-        <li><i class="fa fa-share-square-o"></i></li>
-        {% if site.sharing.twitter %}
-        <li><a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Twitter">
-                <i class="fa fa-twitter-square"></i>
-        </a></li>
-        {% endif %}
-
-        {% if site.sharing.linkedin %}
-        <li><a href="http://www.linkedin.com/shareArticle?url={{ site.url }}{{ page.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="Share on LinkedIn">
-                <i class="fa fa-linkedin-square"></i>
-        </a></li>
-        {% endif %}
-
-        {% if site.sharing.facebook %}
-        <li><a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">
-                <i class="fa fa-facebook-square"></i>
-        </a></li>
-        {% endif %}
-
-        {% if site.sharing.google_plus %}
-        <li><a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+">
-                <i class="fa fa-google-plus-square"></i>
-        </a></li>
-        {% endif %}
-
-        {% if site.sharing.reddit %}
-        <li><a href="http://reddit.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="Share on Reddit">
-                <i class="fa fa-reddit-square"></i>
-        </a></li>
-        {% endif %}
+                <li class="relatedPost">
+                    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                    {% if post.categories %}
+                        <small>(Categories: {% for category in post.categories %}<a href="/category/{{ category }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %})</small>
+                    {% endif %}
+                </li>
+                {% capture hasSimilar %}{{ hasSimilar }}*{% endcapture %}
+                {% assign postHasSimilar = true %}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+{% endfor %}
+{% if hasSimilar.size > 0 %}
     </ul>
+    </div>
+{% endif %}
+
+<div class="PageNavigation">
+  {% if page.previous.url %}
+    <a class="prev pull-left" href="{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
+  {% endif %}
+  {% if page.next.url %}
+    <a class="next pull-right" href="{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
+  {% endif %}
 </div>
 
-<br/>
-<br/>
 
+<div class="disqus-comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* <![CDATA[ */
 
-{% if page.comments %}
-<div id="disqus_thread"></div>
-<script>
-    /*
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-     */
-    var disqus_config = function () {
-        this.page.url = '{{ page.url }}';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = '{{ page.url }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    (function() {  // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        
-        s.src = '//eodos.disqus.com/embed.js';
-        
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-{% endif %}
+        var disqus_shortname = "{{ site.disqus_shortname }}";
+        var disqus_identifier = "{{ site.url }}_{{ page.title }}";
+        var disqus_title = "{{ page.title }}";
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    /* ]]> */
+    </script>
+</div>
+</div>

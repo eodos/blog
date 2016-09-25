@@ -20,7 +20,9 @@ tags:
   - yahoo
   - yql
 ---
-## Introducción<a href="https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/yql.jpg" data-rel="lightbox-0" title=""><img class="  wp-image-613 alignright" src="https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/yql.jpg?resize=388%2C215" alt="yql" srcset="https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/yql.jpg?w=672&ssl=1 672w, https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/yql.jpg?resize=300%2C166&ssl=1 300w" sizes="(max-width: 388px) 100vw, 388px" data-recalc-dims="1" /></a>
+## Introducción
+
+<a href="https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/yql.jpg" data-rel="lightbox-0" title=""><img class="  wp-image-613 alignright" src="https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/yql.jpg?resize=388%2C215" alt="yql" srcset="https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/yql.jpg?w=672&ssl=1 672w, https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/yql.jpg?resize=300%2C166&ssl=1 300w" sizes="(max-width: 388px) 100vw, 388px" data-recalc-dims="1" /></a>
 
 En la aplicación del riego automático es interesante contar con el pronóstico meteorológico de los próximos días para poder prever la caída de precipitaciones y por tanto dotar al sistema de una variable adicional a tener en cuenta al decidir cuándo poner en marcha sus actuadores.
 
@@ -33,7 +35,6 @@ En nuestro caso se harán peticiones a dos bases de datos:
   * Weather: para obtener el pronóstico meteorológico de un lugar conocido su **woeid** (un identificador que emplea Yahoo para referirse a cualquier propiedad del planeta Tierra).
   * Geo: nos permitirá obtener el **woeid** de una ciudad.
 
-&nbsp;
 
 ## Petición YQL
 
@@ -41,11 +42,14 @@ Desde la **consola YQL** de Yahoo podemos realizar peticiones y observar la sali
 
 En nuestro caso, si queremos en primer lugar obtener el código woeid de Málaga, podemos ejecutar (el nombre de la ciudad y el país deben estar en inglés):
 
-<pre class="lang:sh decode:true ">select woeid from geo.places where text='malaga, spain'</pre>
+```sql
+select woeid from geo.places where text='malaga, spain'
+```
 
 Obteniendo la salida:
 
-<pre class="lang:js decode:true">{
+```json
+{
  "query": {
   "count": 10,
   "created": "2015-05-11T17:58:06Z",
@@ -64,19 +68,23 @@ Obteniendo la salida:
      "woeid": "2444417"
     },
 
-...</pre>
+...
+```
 
 Observamos que obtenemos varios valores de woeid, de varias localizaciones cercanas a la ciudad de Málaga (Ciudad, Aeropuerto...). En nuestro caso nos vale con quedarnos con el primero, el general de Málaga.
 
 Si ahora queremos obtener el pronóstico meteorológico para esta localización podemos anidar las peticiones:
 
-<pre class="lang:sh decode:true ">select * from weather.forecast where woeid in (
+```sql
+select * from weather.forecast where woeid in (
   select woeid from geo.places where text='malaga, spain'
-) and u='c'</pre>
+) and u='c'
+```
 
 Obteniendo:
 
-<pre class="lang:java decode:true">{
+```json
+{
  "query": {
   "count": 10,
   "created": "2015-05-11T18:01:01Z",
@@ -191,17 +199,22 @@ Obteniendo:
      }
     },
     
-...</pre>
+...
+```
 
 El valor que más nos interesa para saber si va a llover o no es  el **code** ubicado en el nodo **forecast**. Podemos filtrar la petición y quedarnos con los 4 primeros valores, correspondientes a los 4 días de predicción de la ciudad de Málaga y descartar el resto (correspondiente a otros woeid).
 
-<pre class="lang:sh decode:true">select item.forecast.code from weather.forecast where woeid in (
+
+```sql
+select item.forecast.code from weather.forecast where woeid in (
   select woeid from geo.places where text='Malaga, Spain'
-) and u='c'</pre>
+) and u='c'
+```
 
 Nos devuelve:
 
-<pre class="lang:java decode:true ">{
+```json
+{
  "query": {
   "count": 40,
   "created": "2015-05-11T18:08:49Z",
@@ -243,17 +256,16 @@ Nos devuelve:
      }
     },
 
-...</pre>
+...
+```
 
 Como observamos en la siguiente tabla, los códigos indican una descripción del tiempo que va a hacer ese día.
 
 <a href="https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/yahoo.png" data-rel="lightbox-1" title=""><img class=" size-full wp-image-607 aligncenter" src="https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/yahoo.png?resize=534%2C994" alt="yahoo" srcset="https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/yahoo.png?w=534&ssl=1 534w, https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/yahoo.png?resize=161%2C300&ssl=1 161w" sizes="(max-width: 534px) 100vw, 534px" data-recalc-dims="1" /></a>
 
-&nbsp;
 
 Observamos que si el código está entre 19 y 34 o vale 46 o 44 indica que ese día no va a llover.
 
-&nbsp;
 
 ## Script en Python para la petición
 
@@ -269,7 +281,8 @@ Una vez realizada la petición y transformado el objeto JSON recorremos los camp
 
 A continuación el script duerme el tiempo indicado (en minutos) y vuelve a ejecutarse entero.
 
-<pre class="lang:python decode:true ">#!/usr/bin/python2
+```python
+#!/usr/bin/python2
 
 # Este programa realiza una peticipn a la API de Yahoo Weather para obtener el pronostico del tiempo de 4 dias y analiza si alguno de ellos
 # indica lluvia. En caso afirmativo almacena el numero del dia en el fichero. En caso negativo almacena 4. Si no puede conectar al servidor 
@@ -281,67 +294,70 @@ from time import sleep
 
 while True:
 
-    forecast = [0,0,0,0]
+  forecast = [0,0,0,0]
 
-    # Si ninguno de los 4 días de pronóstico va a llover, almacenamos un 4
-    next_rain = 4
+  # Si ninguno de los 4 días de pronóstico va a llover, almacenamos un 4
+  next_rain = 4
 
-    # Leemos el tiempo de espera entre dos peticiones para obtener el pronostico, en minutos
-    f = open("vars/FORECAST_RATE", 'r')
-    rate = f.read()
-    f.close()
+  # Leemos el tiempo de espera entre dos peticiones para obtener el pronostico, en minutos
+  f = open("vars/FORECAST_RATE", 'r')
+  rate = f.read()
+  f.close()
 
-    # Leemos la localizacion de la cual obtener el pronostico
-    f = open("vars/LOCATION", 'r')
-    location = f.read()
-    f.close()
+  # Leemos la localizacion de la cual obtener el pronostico
+  f = open("vars/LOCATION", 'r')
+  location = f.read()
+  f.close()
 
-    # Creamos la URL que contiene la peticion
-    baseurl = "https://query.yahooapis.com/v1/public/yql?"
-    yql_query = "select item.forecast.code from weather.forecast where woeid in (select woeid from geo.places where text='" + location + "') and u='c'"
-    yql_url = baseurl + urllib.urlencode({'q':yql_query}) + "&format=json"
+  # Creamos la URL que contiene la peticion
+  baseurl = "https://query.yahooapis.com/v1/public/yql?"
+  yql_query = "select item.forecast.code from weather.forecast where woeid in (select woeid from geo.places where text='" + location + "') and u='c'"
+  yql_url = baseurl + urllib.urlencode({'q':yql_query}) + "&format=json"
 
-    # Realizamos la peticion a la API de Yahoo Weather
-    try:
-        result = urllib2.urlopen(yql_url).read()
-        data = json.loads(result)
-        for i in range(0, 4):
+  # Realizamos la peticion a la API de Yahoo Weather
+  try:
+    result = urllib2.urlopen(yql_url).read()
+    data = json.loads(result)
+    for i in range(0, 4):
 
-            # Obtenemos el codigo que indica el pronostico meteorologico de cada dia
-            forecast[i] = data['query']['results']['channel'][i]['item']['forecast']['code']
+      # Obtenemos el codigo que indica el pronostico meteorologico de cada dia
+      forecast[i] = data['query']['results']['channel'][i]['item']['forecast']['code']
 
-            # Analizamos si ese codigo indica lluvia. Si es asi anotamos el dia en el que va a llover y pasamos a la escritura de la variable
-            if not (int(forecast[i]) >= 19 and int(forecast[i]) <= 34) or (int(forecast[i]) == 36) or (int(forecast[i]) == 44):
-                next_rain = i
-                break
+      # Analizamos si ese codigo indica lluvia. Si es asi anotamos el dia en el que va a llover y pasamos a la escritura de la variable
+      if not (int(forecast[i]) >= 19 and int(forecast[i]) <= 34) or (int(forecast[i]) == 36) or (int(forecast[i]) == 44):
+        next_rain = i
+        break
 
-    # Si no podemos conectar a la API, escribimos -1 en el fichero salida
-    except:
-        next_rain = -1
+  # Si no podemos conectar a la API, escribimos -1 en el fichero salida
+  except:
+    next_rain = -1
 
-    f = open("vars/FORECAST", 'w')
-    f.write(str(next_rain))
-    f.close()
+  f = open("vars/FORECAST", 'w')
+  f.write(str(next_rain))
+  f.close()
 
-    sleep(int(rate)*60)</pre>
+  sleep(int(rate)*60)
+```
 
 Damos permisos de ejecución al fichero con:
 
-<pre class="lang:sh decode:true">> chmod +x weather_forecast.py</pre>
+```bash
+$ chmod +x weather_forecast.py
+```
 
 Añadiendo algunas salidas por pantalla ejecutamos y obtenemos:
 
 <a href="https://i0.wp.com/eodos.net/wp-content/uploads/2015/05/weather_python.png" data-rel="lightbox-2" title=""><img class=" size-full wp-image-608 aligncenter" src="https://i0.wp.com/eodos.net/wp-content/uploads/2015/05/weather_python.png?resize=465%2C263" alt="weather_python" srcset="https://i0.wp.com/eodos.net/wp-content/uploads/2015/05/weather_python.png?w=465&ssl=1 465w, https://i0.wp.com/eodos.net/wp-content/uploads/2015/05/weather_python.png?resize=300%2C170&ssl=1 300w" sizes="(max-width: 465px) 100vw, 465px" data-recalc-dims="1" /></a>
 
-&nbsp;
 
 ## Programa main.c
 
-Se modifica el programa que contiene el hilo principal de ejecución para que mediante las instrucciones **fork()** y **execlp** cree un proceso hijo que ejecute el script de petición del pronóstico meteorológico. Para ello se añade la librería **<unistd.h>**.
+Se modifica el programa que contiene el hilo principal de ejecución para que mediante las instrucciones ```fork()``` y ```execlp``` cree un proceso hijo que ejecute el script de petición del pronóstico meteorológico. Para ello se añade la librería ```<unistd.h>```.
 
 Se añaden también las instrucciones de lectura de la salida del script y su almacenamiento en el fichero LOG.
 
-<pre class="lang:c decode:true ">#include <stdio.h>
+```c
+#include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include "functions.h"
@@ -357,108 +373,102 @@ Se añaden también las instrucciones de lectura de la salida del script y su al
 #define TAG_HUM "HUMIDITY"
 
 int main() {
-    char * buf;
+  char * buf;
 
-    int refresh_rate;
+  int refresh_rate;
 
-    char * timestamp;
+  char * timestamp;
 
-    uint nBytesTAG_TEMP = sizeof(TAG_TEMP)-1; // no enviamos el caracter '\0'
-    uint nBytesTAG_RAIN = sizeof(TAG_RAIN)-1;
-    uint nBytesTAG_HUM = sizeof(TAG_HUM)-1;
-    uint nBytesTEMP = 4;
-    uint nBytesRAIN = 1;
-    uint nBytesHUM = 3;
+  uint nBytesTAG_TEMP = sizeof(TAG_TEMP)-1; // no enviamos el caracter '\0'
+  uint nBytesTAG_RAIN = sizeof(TAG_RAIN)-1;
+  uint nBytesTAG_HUM = sizeof(TAG_HUM)-1;
+  uint nBytesTEMP = 4;
+  uint nBytesRAIN = 1;
+  uint nBytesHUM = 3;
 
-    float temperature;
-    uint rain;
-    uint humidity;
-    int forecast;
+  float temperature;
+  uint rain;
+  uint humidity;
+  int forecast;
 
-    char temperature_char[] = {0};
-    char rain_char[] = {0};
-    char humidity_char[] = {0};
-    char forecast_char[] = {0};
+  char temperature_char[] = {0};
+  char rain_char[] = {0};
+  char humidity_char[] = {0};
+  char forecast_char[] = {0};
 
-    int pid, status;
+  int pid, status;
 
-    buf = readVar(TAG_REFRESH_RATE);
-    refresh_rate = atoi((char *) &buf);
-    printf("%s: %d\n", TAG_REFRESH_RATE, refresh_rate);
+  buf = readVar(TAG_REFRESH_RATE);
+  refresh_rate = atoi((char *) &buf);
+  printf("%s: %d\n", TAG_REFRESH_RATE, refresh_rate);
 
-    // Creamos el proceso hijo y le indicamos que ejecute el script para obtener la predicción meteorológica
-    pid = fork();
+  // Creamos el proceso hijo y le indicamos que ejecute el script para obtener la predicción meteorológica
+  pid = fork();
 
-    if (pid == 0) {
-        execlp("python", "python", "weather_forecast.py", NULL);
-        exit(0);
+  if (pid == 0) {
+    execlp("python", "python", "weather_forecast.py", NULL);
+    exit(0);
+  }
+
+  // Proceso padre
+  else {
+
+    for(;;) {
+    
+      // Leemos los valores se los sensores
+      temperature = readSensor(TI, TAG_TEMP, nBytesTAG_TEMP, nBytesTEMP) / 100.00;
+      usleep(50000);
+      rain = readSensor(TI, TAG_RAIN, nBytesTAG_RAIN, nBytesRAIN);
+      usleep(50000);
+      humidity = readSensor(TI, TAG_HUM, nBytesTAG_HUM, nBytesHUM);
+
+      // Obtenemos el timestamp
+      timestamp = getTime();
+
+      // Leemos el pronóstico del fichero
+      buf = readVar(TAG_FORECAST);
+      forecast = atoi((char *) &buf);
+
+      // Convertimos los valores a char*
+      sprintf(temperature_char, "%.2f", temperature);
+      sprintf(rain_char, "%d", rain);
+      sprintf(humidity_char, "%d", humidity);
+      sprintf(forecast_char, "%d", forecast);
+
+      // Creamos los char** que cotienen variables y vectores
+      char * variables_array[] = {TAG_TIMESTAMP, TAG_TEMP, TAG_RAIN, TAG_HUM, TAG_FORECAST, NULL};
+      char * values_array[] = {timestamp, temperature_char, rain_char, humidity_char, forecast_char, NULL};
+
+      printf("%s: %s\n", TAG_TEMP, temperature_char);
+      printf("%s: %s\n", TAG_RAIN, rain_char);
+      printf("%s: %s\n", TAG_HUM, humidity_char);
+      printf("%s: %s\n", TAG_FORECAST, forecast_char);
+      printf("%s\n", timestamp);
+
+      // Guardamos en el log los valores
+      writeVar(variables_array, values_array);
+
+      usleep(refresh_rate * 1000000);
     }
-
-    // Proceso padre
-    else {
-
-        for(;;) {
-        
-            // Leemos los valores se los sensores
-            temperature = readSensor(TI, TAG_TEMP, nBytesTAG_TEMP, nBytesTEMP) / 100.00;
-            usleep(50000);
-            rain = readSensor(TI, TAG_RAIN, nBytesTAG_RAIN, nBytesRAIN);
-            usleep(50000);
-            humidity = readSensor(TI, TAG_HUM, nBytesTAG_HUM, nBytesHUM);
-
-            // Obtenemos el timestamp
-            timestamp = getTime();
-
-            // Leemos el pronóstico del fichero
-            buf = readVar(TAG_FORECAST);
-            forecast = atoi((char *) &buf);
-
-            // Convertimos los valores a char*
-            sprintf(temperature_char, "%.2f", temperature);
-            sprintf(rain_char, "%d", rain);
-            sprintf(humidity_char, "%d", humidity);
-            sprintf(forecast_char, "%d", forecast);
-
-            // Creamos los char** que cotienen variables y vectores
-            char * variables_array[] = {TAG_TIMESTAMP, TAG_TEMP, TAG_RAIN, TAG_HUM, TAG_FORECAST, NULL};
-            char * values_array[] = {timestamp, temperature_char, rain_char, humidity_char, forecast_char, NULL};
-
-            printf("%s: %s\n", TAG_TEMP, temperature_char);
-            printf("%s: %s\n", TAG_RAIN, rain_char);
-            printf("%s: %s\n", TAG_HUM, humidity_char);
-            printf("%s: %s\n", TAG_FORECAST, forecast_char);
-            printf("%s\n", timestamp);
-
-            // Guardamos en el log los valores
-            writeVar(variables_array, values_array);
-
-            usleep(refresh_rate * 1000000);
-        }
-    }
-
-    return 0;
-}</pre>
+  }
+  return 0;
+}
+```
 
 Ejecutando podemos ver que en cuatro días no va a llover (salida -1):
 
 <a href="https://i0.wp.com/eodos.net/wp-content/uploads/2015/05/c_weather.png" data-rel="lightbox-3" title=""><img class=" size-full wp-image-609 aligncenter" src="https://i0.wp.com/eodos.net/wp-content/uploads/2015/05/c_weather.png?resize=371%2C196" alt="c_weather" srcset="https://i0.wp.com/eodos.net/wp-content/uploads/2015/05/c_weather.png?w=371&ssl=1 371w, https://i0.wp.com/eodos.net/wp-content/uploads/2015/05/c_weather.png?resize=300%2C158&ssl=1 300w" sizes="(max-width: 371px) 100vw, 371px" data-recalc-dims="1" /></a>
 
-Observamos que el fichero _vars/FORECAST_ se actualiza correctamente cada minuto (valor indicado en _vars/FORECAST_RATE_) y el log se actualiza correctamente:
+Observamos que el fichero ```vars/FORECAST``` se actualiza correctamente cada minuto (valor indicado en ```vars/FORECAST_RATE```) y el log se actualiza correctamente:
 
 <a href="https://i1.wp.com/eodos.net/wp-content/uploads/2015/05/log_weather.png" data-rel="lightbox-4" title=""><img class=" size-full wp-image-610 aligncenter" src="https://i1.wp.com/eodos.net/wp-content/uploads/2015/05/log_weather.png?resize=348%2C357" alt="log_weather" srcset="https://i1.wp.com/eodos.net/wp-content/uploads/2015/05/log_weather.png?w=348&ssl=1 348w, https://i1.wp.com/eodos.net/wp-content/uploads/2015/05/log_weather.png?resize=292%2C300&ssl=1 292w" sizes="(max-width: 348px) 100vw, 348px" data-recalc-dims="1" /></a>
 
-&nbsp;
 
 ## Referencias
 
-[[1]](https://developer.yahoo.com/yql) Yahoo YQL.
-  
-[[2]](https://developer.yahoo.com/yql/console/) Consola YQL de Yahoo.
-  
-[[3]](https://developer.yahoo.com/weather/documentation.html) Documentación sobre los pronósticos meteorológicos que da la API de Yahoo.
-  
+[[1]](https://developer.yahoo.com/yql) Yahoo YQL.  
+[[2]](https://developer.yahoo.com/yql/console/) Consola YQL de Yahoo.  
+[[3]](https://developer.yahoo.com/weather/documentation.html) Documentación sobre los pronósticos meteorológicos que da la API de Yahoo.  
 [[4]](http://linux.die.net/man/3/execlp) Comando execlp.
   
 <a href="http://freshclickmedia.co.uk/wp-content/uploads/2013/11/yql.jpg" data-rel="lightbox-5" title="">[5]</a> Imagen YQL utilizada.
-
-&nbsp;
