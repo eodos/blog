@@ -24,28 +24,21 @@ Las últimas distribuciones de Linux ya traen el soporte a NTFS integrado, pero 
 
 Instalar los paquetes ntfs-config y ntfs-3g:
 
-    <span style="font-weight:bold;">sudo apt-get install ntfs-3g</p> 
+```bash
+$ sudo apt-get install ntfs-3g
+$ sudo apt-get install ntfs-config
+```
 
-<p>
-  sudo apt-get install ntfs-config </span>
-</p>
+Ejecutamos ```$ bash ntfs-config``` para dar los permisos de unidades externas e internas.
 
-<p>
-  Ejecutamos <span style="font-weight:bold;">ntfs-config</span> para dar los permisos de unidades externas e internas.
-</p>
+Para que las particiones en NTFS se monten automáticamente al inicio de nuestro SO, debemos modificar el archivo fstab (si usais Gnome, sustituid kate por gedit).
 
-<p>
-  Para que las particiones en NTFS se monten automáticamente al inicio de nuestro SO, debemos modificar el archivo fstab (si usais Gnome, sustituid kate por gedit).
-</p>
+```bash
+$ sudo kate /etc/fstab
+```
 
-<p>
-  <span style="font-weight:bold;"> sudo kate /etc/fstab</span>
-</p>
+Añadimos o modificamos la entrada de la partición:
 
-<p>
-  Añadimos o modificamos la entrada de la partición:
-</p>
-
-<p>
-  <span style="font-weight:bold;">/dev/sda1 /media/Almacen ntfs-3g rw,users,gid=users,umask=0002 0 0</span>
-</p>
+```bash
+/dev/sda1 /media/Almacen ntfs-3g rw,users,gid=users,umask=0002 0 0
+```

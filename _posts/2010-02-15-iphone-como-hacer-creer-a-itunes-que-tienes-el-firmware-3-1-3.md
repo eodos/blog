@@ -23,6 +23,6 @@ Como sabréis, si instaláis el nuevo Firmware 3.1.3, perderéis todas vuestras 
 
 <a href="https://i2.wp.com/www.iphonedownloadblog.com/wp-content/uploads/2010/02/fake-3.1.3.jpg" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" data-rel="lightbox-0" title=""><img style="display: block; margin: 0px auto 10px; text-align: center; cursor: hand; width: 317px; height: 304px;" src="https://i2.wp.com/www.iphonedownloadblog.com/wp-content/uploads/2010/02/fake-3.1.3.jpg" border="0" alt="" data-recalc-dims="1" /></a>
 
-Pues bien, si estáis cansados de decirle a iTunes que no queréis actualizar, tenemos una app (aplicación) para vosotros. Se trata de <span style="font-weight: bold;">Fake 3.1.3</span>, la cual hace creer al iTunes que tenéis ya el Firmware 3.1.3 instalado, aunque sigais con el 3.1.2 o alguno anterior.
+Pues bien, si estáis cansados de decirle a iTunes que no queréis actualizar, tenemos una app (aplicación) para vosotros. Se trata de **Fake 3.1.3**, la cual hace creer al iTunes que tenéis ya el Firmware 3.1.3 instalado, aunque sigais con el 3.1.2 o alguno anterior.
 
-Para instalarlo, agregad el repositorio <span style="font-weight: bold;">http://cy.sosiphone.com/</span> vía Cydia.
+Para instalarlo, agregad el repositorio ```http://cy.sosiphone.com/``` vía Cydia.

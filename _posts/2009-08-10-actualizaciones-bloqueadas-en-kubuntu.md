@@ -27,4 +27,6 @@ Es posible que alguna vez os hayáis encontrado con esto:
 
 Para instalar las actualizaciones bloqueadas, sólo tenéis que ir a una terminal y escribir:
 
-> sudo aptitude full-upgrade
+```bash
+$ sudo aptitude full-upgrade
+```

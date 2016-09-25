@@ -24,4 +24,4 @@ tags:
 
 Ya está disponible la versión de Exposé (Mac) para tu iPod/iPhone. Este programa te permite acceder directamente a cualquier página con tus aplicaciones.
 
-Para su descarga, buscad <span style="font-weight: bold;">Orbit</span> en el repositorio <span style="font-weight: bold;">http://repo.beyouriphone.com</span>
+Para su descarga, buscad **Orbit** en el repositorio ```http://repo.beyouriphone.com```

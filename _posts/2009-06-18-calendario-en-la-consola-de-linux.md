@@ -23,24 +23,30 @@ tags:
 
 Si deseas consultar una determinada fecha y no tienes un calendario a la mano, puedes utilizar el útil comando:
   
+```bash
+$ cal
+```
 
-
-> cal </p>
 En una consola de Linux y obtendrás un sencillo calendario.
 
 Si escribes únicamente cal, el sistema mostrará el mes actual con el domingo como primer día de la semana. Si deseas que el lunes aparezca como primer día, debes escribir:
 
-> calc -m
+```bash
+$ calc -m
+```
 
 Ahora, si deseas visualizar un calendario con todos los meses, solo debes añadir el año que deseas. Por ejemplo para visualizar el calendario del 2010 con el lunes como primer día, escribe el siguiente comando:
 
-> cal -m 2010
+```bash
+$ cal -m 2010
+```
 
 También puedes visualizar 3 meses, el anterior, el actual y el próximo, con el argumento -3. Por ejemplo, para visualizar marzo, abril y mayo del presente año, escribimos el siguiente comando:
   
+```bash
+$ cal -3m 4 </p>
+```
 
-
-> cal -3m 4 </p>
 El 4 (abril) indica el mes que estará en el centro.
 
 Otro comando que ofrece una prestaciones similares y más, es gcal. Como siempre, puedes obtener mucha información consultando man gcal o info gcal.

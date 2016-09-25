@@ -29,30 +29,37 @@ tags:
 
 **wicd** es un potente y sencillo gestor de redes, que te simplifica la tarea de gestionarlas, proceso que con KNetworkManager se puede volver muy engorroso. Además, funciona en cualquier plataforma y escritorio, al estar escrito en python.
 
-En primer lugar, vamos a **preparar el entorno** añadiendo los paquetes python, python-devel y wget
+En primer lugar, vamos a **preparar el entorno** añadiendo los paquetes ```python```, ```python-devel``` y ```wget```
 
 **En Fedora 13:**
 
-`$ su -c 'yum -y install python python-devel wget'`
+```bash
+$ su -c 'yum -y install python python-devel wget'
+```
 
 **En Debian / Ubuntu / Kubuntu:**
 
-`$ sudo apt-get install python python-devel wget`
+```bash
+$ sudo apt-get install python python-devel wget
+```
 
 Ahora vamos a bajar, **compilar e instalar wicd**. He usado la versión 1.7.0 del paquete, que cuando escribí el post era la más reciente. Puedes consultar en http://sourceforge.net/projects/wicd/files/ cual es la última versión y modificar lo que hay a continuación:
 
-`$ su -<br />
-# cd /usr/local/src<br />
-# wget http://downloads.sourceforge.net/wicd/wicd-1.7.0.tar.gz<br />
-# tar -xf wicd-1.7.0.tar.gz<br />
-# cd wicd-1.7.0<br />
-# python setup.py configure<br />
-# python setup.py install`
+```bash
+$ sudo cd /usr/local/src  
+$ sudo wget http://downloads.sourceforge.net/wicd/wicd-1.7.0.tar.gz  
+$ sudo tar -xf wicd-1.7.0.tar.gz  
+$ sudo cd wicd-1.7.0  
+$ sudo python setup.py configure  
+$ sudo python setup.py install
+```
 
 Con ésto ya debemos tener wicd instalado. Ahora vamos a deshabilitar KNetworkManager (o el gestor que uses) y habilitar wicd:
 
-`# chkconfig NetworkManager off<br />
-# chkconfig wicd on`
+```bash
+$ sudo chkconfig NetworkManager off<br />
+$ sudo chkconfig wicd on
+```
 
 Al reiniciar ya deberías tener wicd en funcionamiento 🙂
 
@@ -62,6 +69,8 @@ Al reiniciar ya deberías tener wicd en funcionamiento 🙂
 
 <span style="font-family: Arial, Helvetica, sans-serif;">En Fedora he tenido algunos problemas con SELinux, por lo que he tenido que desactivarlo, se hace rápidamente editando el archivo <strong>/etc/selinux/config</strong></span><span style="font-family: Arial, Helvetica, sans-serif;"><br /> </span>
 
-`$ sudo kate /etc/selinux/config`
+```bash
+$ sudo kate /etc/selinux/config
+```
 
 <span style="font-family: Arial, Helvetica, sans-serif;">Y cambiamos <strong>SELINUX=enforcing</strong> por <strong>SELINUX=disabled</strong></span><span style="font-family: Arial, Helvetica, sans-serif;"><br /> </span>

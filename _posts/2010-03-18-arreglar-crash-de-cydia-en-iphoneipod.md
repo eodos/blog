@@ -24,12 +24,10 @@ tags:
   <img src="https://i2.wp.com/www.iphonediario.com/wp-content/uploads/2010/04/actual_cydia.jpg" alt="" data-recalc-dims="1" />
 </div>
 
-<div style="text-align: center;">
-</div>
 
 Si al abrir Cydia en vuestro iPod o iPhone se os cierra a los pocos segundos, seguid los siguientes pasos:
 
-  1. Mediante iFunBox (USB) o SSH acceded a <span style="font-weight: bold;">/private/var/lib/dpkg/updates</span>
-  2. Buscad unos archivos llamados tmp.i y 000* y eliminadlos.
+1. Mediante iFunBox (USB) o SSH acceded a ```/private/var/lib/dpkg/updates```  
+2. Buscad unos archivos llamados ```tmp.i``` y ```000*``` y eliminadlos.
 
 Fin 🙂

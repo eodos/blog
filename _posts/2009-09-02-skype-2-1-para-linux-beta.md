@@ -25,12 +25,12 @@ tags:
 
 Por fin actualizan Skype para Linux, y además trae interesantes mejoras y nuevas funcionalidades:
 
-· Mejora en la calidad del audio.  
-· Soporte para vídeo de alta calidad.  
-· Soporte para Pulseaudio.  
-· Posibilidad de organizar los contactos en grupos.  
-· Envío de SMS.  
-· Nuevos emoticonos.
+* Mejora en la calidad del audio.  
+* Soporte para vídeo de alta calidad.  
+* Soporte para Pulseaudio.  
+* Posibilidad de organizar los contactos en grupos.  
+* Envío de SMS.  
+* Nuevos emoticonos.
 
 Y un largo etcétera.
 

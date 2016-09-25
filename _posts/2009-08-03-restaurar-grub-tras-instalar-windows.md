@@ -30,17 +30,18 @@ Para solucionarlo, y volver a poner el Grub, tenéis que:
 1. Bootear el live CD de alguna distro GNU/Linux (por ejemplo Kubuntu 9.04).  
 2. Abrir una terminal y escribid:
 
-> sudo grub
+```bash
+$ sudo grub
+$ find /boot/grub/stage1
+```
 
-> find /boot/grub/stage1
+La salida será estilo "(hd0,2)". Siendo 0 y 2 dos números que varían según tus particiones.
 
-La salida será estilo "(hd0,2)". Siendo 0 y 2 dos número que varían según tus particiones.
-
-> root (hd0,2)
-
-> setup (hd0)
-
-> quit
+```bash
+$ root (hd0,2)
+$ setup (hd0)
+$ quit
+```
 
 Con esto, ya tendréis el Grub cuando reinicieis el ordenador. Ahora vamos a ver cómo añadir el Windows al grub, y así poder elegir cuando se encienda el ordenador.
 
@@ -48,20 +49,24 @@ Ya en nuestra distro:
 
 1. Vamos a la consola y escribimos:
 
-> sudo kate /boot/grub/menu.lst
+```bash
+$ sudo kate /boot/grub/menu.lst
+```
 
 Sustituid por "gedit" si usáis gnome, o por vuestro editor favorito.
 
 2. Añadimos las siguientes líneas:
 
-> \# This entry is for Windows 7  
-> title Windows 7  
-> root (hd0,0)  
-> chainloader +1
+```
+# This entry is for Windows 7  
+title Windows 7  
+root (hd0,0)  
+chainloader +1
+```
 
 Tenéis que sustituir (hd0,0) por la partición en la que tengáis Windows.  
 Lo podéis ver desde gparted, o cualquier editor de particiones.
 
-Por ejemplo si lo tenéis en /dev/sda3, pues restáis 1 y os queda (hd0,2)
+Por ejemplo si lo tenéis en ```/dev/sda3```, pues restáis 1 y os queda ```(hd0,2)```
 
 Un saludo 🙂

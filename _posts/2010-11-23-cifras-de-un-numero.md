@@ -19,7 +19,8 @@ tags:
 ---
 Este programa va a calcular el número de cifras de un número de una forma muy sencilla, que posteriormente se puede usar como función para extraer dígitos.
 
-<pre class="lang:c decode:1 " >#include <stdio.h>
+```c
+#include <stdio.h>
 #include <conio.h>
 
 int main()
@@ -37,5 +38,4 @@ int main()
     getch();
     return 0;
 }
-
-</pre>
+```

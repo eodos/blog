@@ -26,10 +26,5 @@ github_username:  eodos
 disqus_shortname: 'eodos'
 
 # Build settings
-markdown: redcarpet
-highlighter: rouge
+markdown: kramdown
 theme: minima
-
-# Enable when using redcarpet
-redcarpet:
-extensions: ['smart', 'tables', 'with_toc_data', 'footnotes']

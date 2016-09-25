@@ -29,9 +29,9 @@ Si os gusta tener los programas actualizados a las versiones beta para ir traste
 
 Actualizar Chrome a la versión 3 (la beta) os dará varias funcionalidades nuevas:
 
-· Soporte para HTML5 (para comprobar si tenéis entrad a http://youtube.com/html5 ).  
-· Jump List para Windows 7.  
-· Etc...
+* Soporte para HTML5 (para comprobar si tenéis entrad a http://youtube.com/html5 ).  
+* Jump List para Windows 7.  
+* Etc...
 
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="https://i1.wp.com/2.bp.blogspot.com/_H4ctsPRjMs8/Spw_zV9u_2I/AAAAAAAAAJQ/ztvnOcftWjw/s1600-h/jumplist.jpg" data-rel="lightbox-1" title=""><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 267px; height: 400px;" src="https://i0.wp.com/2.bp.blogspot.com/_H4ctsPRjMs8/Spw_zV9u_2I/AAAAAAAAAJQ/ztvnOcftWjw/s400/jumplist.jpg" border="0" alt="" id="BLOGGER_PHOTO_ID_5376242206475485026" data-recalc-dims="1" /></a>
 
@@ -41,12 +41,12 @@ Para actualizarlo, tenéis que ir a:
 
 y desde ahí podréis acceder a los siguientes enlaces (pinchad directamente para descargarlo automáticamente:
 
-Windows
+# Windows
 
 Dev channel: <http://www.google.com/chrome/eula.html?extra=devchannel>  
 Beta channel: <http://www.google.com/chrome/eula.html?extra=betachannel>
 
-GNU/Linux
+# GNU/Linux
 
 Dev channel (for 32-bit systems): [google-chrome-unstable\_current\_i386.deb](http://www.google.com/chrome/intl/en/eula_dev.html?dl=unstable_i386_deb)  
 Dev channel (for 64-bit systems): [google-chrome-unstable\_current\_amd64.deb](http://www.google.com/chrome/intl/en/eula_dev.html?dl=unstable_amd64_deb)

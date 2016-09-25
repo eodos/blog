@@ -29,9 +29,8 @@ Como la mayor parte de vosotros conoceréis es posible disfrutar de KDE 4 en win
   
 Si se elige la KDE 4.2.95 (marcada como inestable) tendréis, entre otras, los siguientes programas:
 
-  * Aplicaciones inestables: Konsole, Yakuake, Kile, KDevelop, Konversation.</p> 
-  * KOffice 2.0.1
+* Aplicaciones inestables: Konsole, Yakuake, Kile, KDevelop, Konversation 
+* KOffice 2.0.1
 
-Más información: [KDE on Windows](http://windows.kde.org/news.php#itemFirstreleasecandidateofKDE43forWindowsavailable)
-
-Fuente | [KDEBlog](http://www.kdeblog.com/disponible-kde-4-3-rc1-para-windows.html)
+Más información: [KDE on Windows](http://windows.kde.org/news.php#itemFirstreleasecandidateofKDE43forWindowsavailable)  
+Fuente [KDEBlog](http://www.kdeblog.com/disponible-kde-4-3-rc1-para-windows.html)

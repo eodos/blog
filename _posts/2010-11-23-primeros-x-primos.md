@@ -19,9 +19,11 @@ tags:
 ---
 Este programa muestra los x primeros números primos, siendo x un valor introducido.
 
+
 Lo he hecho con una función que determina si un número primo, y si lo es añade 1 al contador, mediante una función de paso de parámetro.
 
-<pre class="lang:c decode:1 " >#include <stdio.h>
+```c
+#include <stdio.h>
 #include <conio.h>
 
 void primo(unsigned num, unsigned &contador);
@@ -64,5 +66,4 @@ void primo(unsigned num, unsigned &contador)
         }
     }
 }
-
-</pre>
+```

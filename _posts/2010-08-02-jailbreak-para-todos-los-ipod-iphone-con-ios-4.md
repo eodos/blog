@@ -27,7 +27,3 @@ Acaba de salir **jailbreakme**, un nuevo método de JB para todos los dispositiv
 </div>
 
 Aún no es perfecto, y hay algunos errores que los usuarios van encontrando, como problemas con los MMS y Facetime, pero tiempo al tiempo.
-
-<center>
-  <br />
-</center>

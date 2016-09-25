@@ -23,7 +23,7 @@ tags:
 ---
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="https://i1.wp.com/linux-distro.co.uk/images/gparted_logo3.png?ssl=1" data-rel="lightbox-0" title=""><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 300px; height: 300px;" src="https://i1.wp.com/linux-distro.co.uk/images/gparted_logo3.png?ssl=1" border="0" alt="" data-recalc-dims="1" /></a>
 
-<span style="font-weight:bold;">gParted</span> es una aplicación de Gnome que te permite particionar tu disco de forma rápida, segura y sencilla.
+*gParted* es una aplicación de Gnome que te permite particionar tu disco de forma rápida, segura y sencilla.
 
 Pero, ¿qué pasa cuando queremos particionar una unidad que está en uso? Para eso existe gParted live, un live CD que te permite usar el programa de forma totalmente gráfica al iniciar el ordenador, desde el CD (o USB).
 

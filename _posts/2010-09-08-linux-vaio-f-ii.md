@@ -22,36 +22,19 @@ tags:
   - Linux
   - Vaio
 ---
-<span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;">Finalmente, decidí instalar Fedora 13 con el escritorio KDE en su versión x64.</span></span> 
+Finalmente, decidí instalar Fedora 13 con el escritorio KDE en su versión x64.
 
-<div>
-  <span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><br /></span></span>
-</div>
 
-<div>
-  <span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;">Los problemas que sufrí en Debian, se solucionaron instantáneamente 🙂</span></span>
-</div>
+Los problemas que sufrí en Debian, se solucionaron instantáneamente 🙂
 
-<div>
-  <span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;">Para el touchpad, fue suficiente con añadir <b>"i8042.nopnp"</b> a la entrada del kernel en el grub. La tarjeta de red también funcionó directamente. Únicamente tuve problemas para autentificarme en redes WEP, que lo solucioné cambiando la contraseña por una WPA. Intentaré solucionarlo más adelante.</span></span>
-</div>
 
-<div>
-  <span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;">También probé con otros gestores de red, ya que KNetworkManager me parece poco potente e ineficaz. wicd funcionó a la perfección, aunque tampoco me andaban las redes WEP.</span></span>
-</div>
+Para el touchpad, fue suficiente con añadir *"i8042.nopnp"* a la entrada del kernel en el grub. La tarjeta de red también funcionó directamente. Únicamente tuve problemas para autentificarme en redes WEP, que lo solucioné cambiando la contraseña por una WPA. Intentaré solucionarlo más adelante.
 
-<div>
-  <span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><br /></span></span>
-</div>
 
-<div>
-  <span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;">Tanto el sonido como la aceleración 3D, funcionaron perfectamente y al instante, sin que tuviera que hacer nada.</span></span>
-</div>
+También probé con otros gestores de red, ya que KNetworkManager me parece poco potente e ineficaz. **wicd** funcionó a la perfección, aunque tampoco me andaban las redes WEP.
 
-<div>
-  <span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;">Por lo tanto, misión cumplida 🙂</span></span>
-</div>
 
-<div>
-  <span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><br /></span></span>
-</div>
+Tanto el sonido como la aceleración 3D, funcionaron perfectamente y al instante, sin que tuviera que hacer nada.
+
+
+Por lo tanto, misión cumplida 🙂

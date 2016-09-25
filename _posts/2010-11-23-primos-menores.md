@@ -17,45 +17,44 @@ tags:
   - cpp
   - primos
 ---
-Este programa te muestra por pantalla todos los números primos menores al número que hayas introducido.
+Este programa te muestra por pantalla todos los números primos menores al número que hayas introducido.  
 
 He usado una función para saber si un número es primo, y un bucle para ir probando todos los números menores al número introducido.
 
-<pre class="lang:c decode:1 " >#include <stdio.h>
+```c
+#include <stdio.h>
 #include <conio.h>
 
 void primo(unsigned num);
 
 int main()
 {
-    unsigned veces,i;
-    printf("Este programa va a motrar los numeros primos menores que n. Introduce n: ");
-    scanf("%u",&veces);
-    for(i=1;i<=veces;i++)
-        primo(i);
+  unsigned veces,i;
+  printf("Este programa va a motrar los numeros primos menores que n. Introduce n: ");
+  scanf("%u",&veces);
+  for(i=1;i<=veces;i++)
+    primo(i);
 
-    getch();
-    return 0;
+  getch();
+  return 0;
 }
 
 void primo(unsigned num)
 {
-    unsigned primo=1,divisor=2;
-    if(num==1)
-        printf("1t");
-    else
+  unsigned primo=1,divisor=2;
+  if(num==1)
+    printf("1t");
+  else
+  {    
+    while((primo==1)&&(num!=divisor))
     {
-        
-        while((primo==1)&&(num!=divisor))
-        {
-            if(num%divisor==0)
-                primo=0;
-            else
-                divisor++;
-        }
-        if(primo==1)
-            printf("%ut",num);
+      if(num%divisor==0)
+        primo=0;
+      else
+        divisor++;
     }
+    if(primo==1)
+      printf("%ut",num);
+  }
 }
-
-</pre>
+```

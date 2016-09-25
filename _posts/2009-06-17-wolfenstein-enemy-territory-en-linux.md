@@ -28,25 +28,34 @@ Para instalarlo en Ubuntu debemos descargar el juego y su actualización, y apli
 
 Para descargar el juego:
 
-> wget http://ftp.games.skynet.be/pub/wolfenstein/et-linux-2.60.x86.run
+```bash
+$ wget http://ftp.games.skynet.be/pub/wolfenstein/et-linux-2.60.x86.run
+```
 
 Descargar la actualización:
 
-> http://ftp.games.skynet.be/pub/wolfenstein/et-linux-2.60-update.x86.run
+```bash
+$ http://ftp.games.skynet.be/pub/wolfenstein/et-linux-2.60-update.x86.run
+```
 
 Instalar el juego, desde la terminal:
 
-> sh ./et-linux-2.60.x86.run
+```bash
+$ sh ./et-linux-2.60.x86.run
+```
 
 Se nos pedirá aceptar la licencia de uso y preguntará sitio de instalación. Con las opciones por defecto, debería funcionar perfecto.
 
 Aplicar la actualización desde terminal:
-  
 
+```bash
+$ sh ./et-linux-2.60-update.x86.run
+```
 
-> sh ./et-linux-2.60-update.x86.run</p>
 Ejecutar el juego desde la terminal:
 
-> ./et
+```bash
+$ ./et
+```
 
 Fuente | [TuxApuntes](http://www.tuxapuntes.com/drupal/node/1433)
