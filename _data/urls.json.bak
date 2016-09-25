@@ -11,6 +11,17 @@
     "icon": "fa-comments"
   },
   {
+    "text": "Projects",
+    "url": "/projects",
+    "icon": "fa-desktop"
+  },
+  {
+    "text": "Resume",
+    "url": "#",
+    "icon": "fa-graduation-cap",
+    "layout": "post"
+  },
+  {
     "text": "Github",
     "url": "http://github.com/eodos",
     "icon": "fa-github",
