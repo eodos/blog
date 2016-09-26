@@ -32,7 +32,7 @@ paginate: 10
 per_page: 20
 paginate_path: "/page:num/"
 
-#google_analytics: UA-72862926-1
+google_analytics: UA-84749123-1
 
 share:
   twitter_username: \#eodos
