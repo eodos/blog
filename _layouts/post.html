@@ -46,6 +46,7 @@ layout: default
 </div>
 
 
+{% if jekyll.environment == "production" %}
 <div class="disqus-comments">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
@@ -64,4 +65,5 @@ layout: default
     /* ]]> */
     </script>
 </div>
+{% endif %}
 </div>

@@ -29,7 +29,8 @@ Como no están firmados digitalmente, es necesario habilitar las directivas de g
 
 Para usar el entorno de desarrollo [Energia](http://energia.nu/) primero hay que descargar los [drivers](http://energia.nu/wordpress/wp-content/uploads/2014/12/xds100.zip). Una vez descargado el entorno de desarrollo escribimos un programa de prueba que haga parpadear el LED que lleva integrado la placa.
 
-<pre class="lang:c decode:true">#define LED RED_LED
+```c
+#define LED RED_LED
 void setup() {                
   pinMode(LED, OUTPUT);     
 }
@@ -39,7 +40,8 @@ void loop() {
   delay(1000);               
   digitalWrite(LED, LOW);    
   delay(1000);
-}</pre>
+}
+```
 
 Para conectar correctamente el IDE con la placa conectada por USB, seleccionamos el puerto de comunicación **COM4** y como placa de desarrollo la **Launchpad (Stellaris) w/ lm4f120 (80MHz)**. Una vez cargado el programa funciona correctamente.
 

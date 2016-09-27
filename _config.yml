@@ -62,4 +62,5 @@ kramdown:
       line_numbers: false
     block:
       line_numbers: true
+      wrap: true
       start_line: 1
