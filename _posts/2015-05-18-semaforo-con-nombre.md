@@ -28,11 +28,11 @@ Para ellos podemos usar la instrucción de POSIX ```timedwait``` (implementada e
 Para probar el funcionamiento de la instrucción timedwait, se crea un programa de prueba que acceda al semáforo, asigne un tiempo de espera de 10 segundos y espere con la instrucción ```sem_wait()```. Por otro lado se crea un script CGI que acceda al semáforo y lo abra con ```sem_post()```.
 
 
-### test.c
+### ```test.c```
 
 Se hace necesario, además, ejecutar la instrucción ```chmod``` sobre el semáforo con nombre ya que los permisos no se asignan correctamente al crear el semáforo.
 
-```c
+{% highlight c linenos=table %}
 #include <semaphore.h>
 #include <time.h>
 #include <stdio.h>
@@ -69,18 +69,18 @@ int main() {
   sem_close(sem);
   sem_unlink(sem_name);
 }
-```
+{% endhighlight %}
 
 Se compila con el comando:
 
-```bash
+{% highlight bash %}
 $ gcc -o test test.c -lpthread
-```
+{% endhighlight %}
 
 
-### open_semaphore.cgi
+### ```open_semaphore.cgi```
 
-```c
+{% highlight c linenos=table %}
 /* Este script cgi abre un semáforo con nombre */
 
 #include <semaphore.h>
@@ -111,13 +111,13 @@ int main() {
   sem_close(sem);
 
 }
-```
+{% endhighlight %}
 
 Se compila con el comando:
 
-```bash
+{% highlight bash %}
 $ gcc -o open_semaphore.cgi open_semaphore.c -lpthread
-```
+{% endhighlight %}
 
 Comprobamos que funciona correctamente. El programa continua ejecutándose a los 10 segundos o al ejecutar el script.
 
@@ -126,11 +126,11 @@ Comprobamos que funciona correctamente. El programa continua ejecutándose a los
 <a href="https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/semaphore_2.png" data-rel="lightbox-1" title=""><img class=" size-full wp-image-618 aligncenter" src="https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/semaphore_2.png?resize=503%2C111" alt="semaphore_2" srcset="https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/semaphore_2.png?w=503&ssl=1 503w, https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/semaphore_2.png?resize=300%2C66&ssl=1 300w" sizes="(max-width: 503px) 100vw, 503px" data-recalc-dims="1" /></a>
 
 
-## Adaptación al programa main.c
+## Adaptación al programa ```main.c```
 
 Ahora se añade el semáforo al programa principal de la Raspberry Pi. En cada ejecución del bucle principal leemos el valor de la tasa de refresco (por si el usuario lo ha modificado desde la aplicación Android) y actualizamos el semáforo con nombre para que espere el valor indicado.
 
-```c
+{% highlight c linenos=table %}
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -252,7 +252,7 @@ int main() {
 
   return 0;
 }
-```
+{% endhighlight %}
 
 ## Referencias
 

@@ -23,12 +23,12 @@ Djl, como dice en la página oficial, es un administrador de juegos escrito en P
 
 Para usarlo debemos descargar la última versión, descomprimirla e instalarla. Por ejemplo:
 
-```bash
+{% highlight bash linenos=table %}
 $ wget http://www.djl-linux.org/maj_djl/archives/djl-1.2.6.tar.gz  
 $ tar zxvf djl-1.2.6.tar.gz  
 $ cd djl  
 $ sh djl.sh
-```
+{% endhighlight %}
 
 En la primera ejecución debemos configurar algunas opciones básicas y, luego de ello, veremos algo como esto:
 
@@ -46,4 +46,4 @@ Tiene además otras características interesantes:
 * Cuentas con un cliente IRC dentro del programa, que te permite discutir con otros usuarios.      
 * Puedes subir tus propios juegos al repositorio.
 
-Fuente | [CasiDiablo](http://casidiablo.net/djl-instalador-juegos-linux/)
+Fuente \| [CasiDiablo](http://casidiablo.net/djl-instalador-juegos-linux/)

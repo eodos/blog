@@ -24,11 +24,11 @@ tags:
 ---
 Bueno hoy he hecho mi primer programa importando modulos. Este en concreto calcula el valor del coseno de un angulo dado en radianes. Se puede modificar para aceptarlos en grados decimales...
 
-```python
+{% highlight python linenos=table %}
 #!/usr/bin/env python
 from math import cos
 a=float(raw_input("Introduce el valor en radianes: "))
 b=cos(a)
 print "El coseno es " ,str(b)
 raw_input()
-```
+{% endhighlight %}

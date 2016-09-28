@@ -34,10 +34,6 @@ paginate_path: "/page:num/"
 
 google_analytics: UA-84749123-1
 
-share:
-  twitter_username: \#eodos
-  fb_appid: 000000000000
-
 # Disqus comments configuration (leave blank to disable comments)
 disqus_shortname: 'eodos'
 
@@ -52,15 +48,4 @@ kramdown:
   input:  GFM
   # https://github.com/jekyll/jekyll/pull/4090
   syntax_highlighter: rouge
-
-  # Rouge Highlighter in Kramdown › http://kramdown.gettalong.org/syntax_highlighter/rouge.html
-  # span, block element options fall back to global
-  syntax_highlighter_opts:
-    # Rouge Options › https://github.com/jneen/rouge#full-options
-    css_class: 'highlight'
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      wrap: true
-      start_line: 1
+  hard_wrap: false

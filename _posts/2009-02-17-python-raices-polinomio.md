@@ -26,7 +26,7 @@ Ayer empecé con el Python, y hoy he compilado mi primer programa "útil", que c
 
 Os pego el código por si queréis echarle un vistazo.
 
-```python
+{% highlight python linenos=table %}
 #!/usr/bin/env python
 print "Este programa calculara las raices de un polinomio"
 a=float(raw_input("Introduce el valor correspondiente a x^2 (a): "))
@@ -44,4 +44,4 @@ l=float(j)/float(g)
 m=float(k)/float(g)
 print "Las raices de " ,str(a) ,"x^2" ,str(b) ,"x" ,str(c) ,"son: " ,str(l) ,"y " ,str(m)
 raw_input()
-```
+{% endhighlight %}

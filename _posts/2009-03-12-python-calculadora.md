@@ -19,7 +19,7 @@ categories:
 tags:
   - Python
 ---
-```python
+{% highlight python linenos=table %}
 #!/usr/bin/env python
 
 #Datos del programa:
@@ -141,4 +141,4 @@ while operacion!=7:
 if operacion==7:
   print "Gracias por usar el programa"
   raw_input()
-```
+{% endhighlight %}

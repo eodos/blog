@@ -38,13 +38,13 @@ Para finalizar la aplicación Android, deben sustituirse los controles de la int
   * Botón para leer los valores de los parámetros del sistema.
 
 
-##  Script de lectura de los valores del LOG (read_log.cgi)
+##  Script de lectura de los valores del LOG ```read_log.cgi```
 
 Para el funcionamiento de los botones definidos es necesario crear un script que lea estos valores de los sensores recogidos en el fichero LOG.
 
-El script abre en primer lugar el LOG, ubicado en _vars/VARS_, lee la primera línea (el header que contiene el nombre de las variables) y elimina el último carácter (salto de carro \n). A continuación lee todo el fichero hasta llegar a la última fija (EOF) y la guarda (los valores más actualizados de los sensores). Elimina nuevamente el último carácter y cierra el archivo. Ahora separa los nombres de las variables y los valores mediante la función **strtok** al estar almacenados en formato **CSV**. Guarda estos pares de valores en un **objeto JSON** y lo devuelve por la salida estándar.
+El script abre en primer lugar el LOG, ubicado en ```vars/VARS```, lee la primera línea (el header que contiene el nombre de las variables) y elimina el último carácter (salto de carro ```\n```). A continuación lee todo el fichero hasta llegar a la última fija (EOF) y la guarda (los valores más actualizados de los sensores). Elimina nuevamente el último carácter y cierra el archivo. Ahora separa los nombres de las variables y los valores mediante la función **strtok** al estar almacenados en formato **CSV**. Guarda estos pares de valores en un **objeto JSON** y lo devuelve por la salida estándar.
 
-```c
+{% highlight c linenos=table %}
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -129,13 +129,13 @@ int main() {
 
   printf("%s\n", buf);
 }
-```
+{% endhighlight %}
 
 Compilamos con:
 
-```bash
+{% highlight bash %}
 $ gcc -o read_log.cgi read_log.c json-builder.c -lm
-```
+{% endhighlight %}
 
 Y lo probamos:
 
@@ -148,7 +148,7 @@ Y lo probamos:
 
 Al tener que leer un campo de texto que puede contener espacios, se cambia la instrucción **fscanf** por **fgets**, la cual lee una línea entera.
 
-```c
+{% highlight c linenos=table %}
 #include <stdio.h>
 #include <stdlib.h>
 #include "functions.h"
@@ -199,7 +199,7 @@ int main() {
     printf("%s\n", buf);
   }
 }
-```
+{% endhighlight %}
 
 <a href="https://i0.wp.com/eodos.net/wp-content/uploads/2015/05/read_vars.png" data-rel="lightbox-1" title=""><img class=" size-full wp-image-625 aligncenter" src="https://i0.wp.com/eodos.net/wp-content/uploads/2015/05/read_vars.png?resize=823%2C147" alt="read_vars" srcset="https://i0.wp.com/eodos.net/wp-content/uploads/2015/05/read_vars.png?w=823&ssl=1 823w, https://i0.wp.com/eodos.net/wp-content/uploads/2015/05/read_vars.png?resize=300%2C54&ssl=1 300w" sizes="(max-width: 823px) 100vw, 823px" data-recalc-dims="1" /></a>
 
@@ -208,7 +208,7 @@ int main() {
 
 Se utilizaba la instrucción ```fscanf``` para separar la variable y el valor de la URL ```write.cgi?REFRESH_RATE=10```. Al tener un campo que incluye texto y una coma, se facilita este proceso usando la instrucción ```strtok```.
 
-```c
+{% highlight c linenos=table %}
 #include <stdio.h>
 #include <stdlib.h>
 #include "functions.h"
@@ -246,7 +246,7 @@ int main() {
     printf("Success");
   }
 }
-```
+{% endhighlight %}
 
 <a href="https://i1.wp.com/eodos.net/wp-content/uploads/2015/05/write_var.png" data-rel="lightbox-2" title=""><img class=" size-full wp-image-626 aligncenter" src="https://i1.wp.com/eodos.net/wp-content/uploads/2015/05/write_var.png?resize=629%2C152" alt="write_var" srcset="https://i1.wp.com/eodos.net/wp-content/uploads/2015/05/write_var.png?w=629&ssl=1 629w, https://i1.wp.com/eodos.net/wp-content/uploads/2015/05/write_var.png?resize=300%2C72&ssl=1 300w" sizes="(max-width: 629px) 100vw, 629px" data-recalc-dims="1" /></a>
 
@@ -255,7 +255,7 @@ int main() {
 
 Con motivo de dar forma a la aplicación final de android se añade la variable lógica **actuator** que indicará si el actuador que controla el riego está encendido o no. Más adelante se propone un algoritmo que controle esta señal.
 
-```c
+{% highlight c linenos=table %}
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -385,7 +385,7 @@ int main() {
 
   return 0;
 }
-```
+{% endhighlight %}
 
 <a href="https://i0.wp.com/eodos.net/wp-content/uploads/2015/05/main_actuator_0.png" data-rel="lightbox-3" title=""><img class=" size-full wp-image-627 aligncenter" src="https://i0.wp.com/eodos.net/wp-content/uploads/2015/05/main_actuator_0.png?resize=308%2C137" alt="main_actuator_0" srcset="https://i0.wp.com/eodos.net/wp-content/uploads/2015/05/main_actuator_0.png?w=308&ssl=1 308w, https://i0.wp.com/eodos.net/wp-content/uploads/2015/05/main_actuator_0.png?resize=300%2C133&ssl=1 300w" sizes="(max-width: 308px) 100vw, 308px" data-recalc-dims="1" /></a>
 
@@ -395,9 +395,9 @@ int main() {
 Se rediseñan los fragments para mostrar la información indicada anteriormente. También se añade a los fragments la funcionalidad de que al cargarse en la Activity realice la petición de leer los datos que debe mostrar en ese fragment de forma automática.
 
 
-### main\_variables\_fragment.xml
+### ```main_variables_fragment.xml```
 
-```xml
+{% highlight xml linenos=table %}
 <RelativeLayout
 
   xmlns:android="http://schemas.android.com/apk/res/android"
@@ -586,11 +586,11 @@ Se rediseñan los fragments para mostrar la información indicada anteriormente.
     android:layout_below="@+id/timestamp"
     android:layout_centerHorizontal="true" />
 </RelativeLayout>
-```
+{% endhighlight %}
 
-### advanced\_variables\_fragment.xml
+### ```advanced_variables_fragment.xml```
 
-```xml
+{% highlight xml linenos=table %}
 <RelativeLayout
 
   xmlns:android="http://schemas.android.com/apk/res/android"
@@ -731,14 +731,16 @@ Se rediseñan los fragments para mostrar la información indicada anteriormente.
     android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
-```
+{% endhighlight %}
 
 
-### MainVariablesFragment.java
+### ```MainVariablesFragment.java```
 
-<a href="https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/android_final1.png" data-rel="lightbox-4" title=""><img class="  wp-image-628 alignright" src="https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/android_final1.png?resize=348%2C546" alt="android_final1" srcset="https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/android_final1.png?w=565&ssl=1 565w, https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/android_final1.png?resize=191%2C300&ssl=1 191w" sizes="(max-width: 348px) 100vw, 348px" data-recalc-dims="1" /></a>Se crean las referencias a los controles de la interfaz y y asocian los **listeners** a cada uno de los botones que aparecen. El botón **Obtener últimos valores** a la función **readLogVariables**, que ejecuta el script **read_log.cgi** y el botón **Solicitad nuevos valores**, que ejecuta **openSemaphore** y 500ms después (espera manejada mediante un **Handler**) invoca **readLogVariables** para obtener los nuevos valores que se han solicitado.
+<a href="https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/android_final1.png" data-rel="lightbox-4" title=""><img class="  wp-image-628 alignright" src="https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/android_final1.png?resize=348%2C546" alt="android_final1" srcset="https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/android_final1.png?w=565&ssl=1 565w, https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/android_final1.png?resize=191%2C300&ssl=1 191w" sizes="(max-width: 348px) 100vw, 348px" data-recalc-dims="1" /></a>
 
-```java
+Se crean las referencias a los controles de la interfaz y y asocian los **listeners** a cada uno de los botones que aparecen. El botón **Obtener últimos valores** a la función ```readLogVariables```, que ejecuta el script ```read_log.cgi``` y el botón **Solicitad nuevos valores**, que ejecuta ```openSemaphore``` y 500ms después (espera manejada mediante un **Handler**) invoca ```readLogVariables``` para obtener los nuevos valores que se han solicitado.
+
+{% highlight java linenos=table %}
 package net.eodos.controlderiego;
 
 import android.app.AlertDialog;
@@ -1045,16 +1047,18 @@ public class MainVariablesFragment extends Fragment {
     toast.show();
   }
 }
-```
+{% endhighlight %}
 
 
-### AdvancedVariablesFragment.java
+### ```AdvancedVariablesFragment.java```
 
-<img class="  wp-image-630 alignright" src="https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/android_final2.png?resize=427%2C672" alt="android_final2" srcset="https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/android_final2.png?w=564&ssl=1 564w, https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/android_final2.png?resize=191%2C300&ssl=1 191w" sizes="(max-width: 427px) 100vw, 427px" data-recalc-dims="1" />Se crean los controles a la interfaz y se crean los listeners. A los botones **Guardar** se le asocia la invocación de la función **writeVariable(String var, editText EditText)** que ejecuta el script **write.cgi** y al botón **Obtener parámetros** la función **readVariables()** que ejecuta el script **read.cgi**.
+<img class="  wp-image-630 alignright" src="https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/android_final2.png?resize=427%2C672" alt="android_final2" srcset="https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/android_final2.png?w=564&ssl=1 564w, https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/android_final2.png?resize=191%2C300&ssl=1 191w" sizes="(max-width: 427px) 100vw, 427px" data-recalc-dims="1" />
+
+Se crean los controles a la interfaz y se crean los listeners. A los botones **Guardar** se le asocia la invocación de la función ```writeVariable(String var, editText EditText)``` que ejecuta el script ```write.cgi``` y al botón **Obtener parámetros** la función ```readVariables()``` que ejecuta el script ```read.cgi```.
 
 También se crea un nuevo **Toast** con el mensaje **Guardado** que aparece cuando se guarda correctamente un parámetro en la Raspberry Pi.
 
-```java
+{% highlight java linenos=table %}
 package net.eodos.controlderiego;
 
 import android.app.AlertDialog;
@@ -1398,7 +1402,7 @@ public class AdvancedVariablesFragment extends Fragment {
     toast.show();
   }
 }
-```
+{% endhighlight %}
 
 
 ## Referencias

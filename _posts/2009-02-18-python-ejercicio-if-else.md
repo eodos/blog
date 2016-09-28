@@ -26,7 +26,7 @@ tags:
 ---
 Tras leerme la lección de condicionales he decidido hacer algún programa sencillo.
 
-```python
+{% highlight python linenos=table %}
 #!/usr/bin/env python
 edad = int(raw_input('Cuantos anos tienes '))
 if edad>=90:
@@ -41,4 +41,4 @@ else:
        print 'Eres mayor de edad'
 print 'Hasta la proxima'
 raw_input()
-```
+{% endhighlight %}

@@ -33,4 +33,4 @@ Hay que destacar del vídeo varios aspectos:
   <span class="embed-youtube" style="text-align:center; display: block;"></span>
 </div>
 
-Fuente | [KDEBlog](http://www.kdeblog.com/video-conceptos-basicos-de-linux-distribuciones-y-escritorios.html)
+Fuente \| [KDEBlog](http://www.kdeblog.com/video-conceptos-basicos-de-linux-distribuciones-y-escritorios.html)

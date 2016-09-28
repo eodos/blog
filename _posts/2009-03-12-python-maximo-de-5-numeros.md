@@ -24,7 +24,7 @@ tags:
 ---
 Este programa lo hice hace tiempo, pero lo pongo como recopilación. Compara 5 números e imprime el mayor:
 
-```python
+{% highlight python linenos=table %}
 #!/usr/bin/env python
 
 print "Este programa te permite calcular el numero mas alto de 5 numeros."
@@ -49,4 +49,4 @@ if e>maximo:
   maximo=e
 
 print "El numero mas alto es:" ,str(maximo)
-```
+{% endhighlight %}

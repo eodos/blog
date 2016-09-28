@@ -59,3 +59,10 @@
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
+
+/*formatting for code block with line numbers*/
+.highlight .lineno { border: none; border-radius: 0; border-right: solid 1px; color: #aaa; }
+.highlight .code pre { border: none; white-space: pre; overflow-x: auto; word-wrap: normal; }
+
+/*formatting for code block with no line numbers*/
+.highlight code { display: block; white-space: pre; overflow-x: auto; word-wrap: normal; }

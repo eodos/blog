@@ -27,4 +27,4 @@ La función es sencilla: pulsas el botón que se muestra en la imagen, y cargas 
 
 Para utilizar esta función, debes activarla en la pestaña Labs de la configuración.
 
-Fuente | [dosbits](http://www.dosbits.com/2009/04/16/gmail-permite-insertar-imgenes-en-correos/)
+Fuente \| [dosbits](http://www.dosbits.com/2009/04/16/gmail-permite-insertar-imgenes-en-correos/)
