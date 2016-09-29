@@ -17,7 +17,9 @@ tags:
 ---
 ## Introducción
 
-El sensor de humedad utilizado es el **FC-28**.  Se basa, al igual que el sensor de lluvia, es un divisor de voltaje ajustable mediante un potenciómetro. Según el fabricante:<img class="  wp-image-589 alignright" src="https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/humidity.jpg?resize=304%2C165" alt="humidity" srcset="https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/humidity.jpg?w=960&ssl=1 960w, https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/humidity.jpg?resize=300%2C163&ssl=1 300w, https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/humidity.jpg?resize=900%2C488&ssl=1 900w" sizes="(max-width: 304px) 100vw, 304px" data-recalc-dims="1" />
+El sensor de humedad utilizado es el **FC-28**.  Se basa, al igual que el sensor de lluvia, es un divisor de voltaje ajustable mediante un potenciómetro. Según el fabricante:
+
+<img class="  wp-image-589 alignright" src="https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/humidity.jpg?resize=304%2C165" alt="humidity" srcset="https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/humidity.jpg?w=960&ssl=1 960w, https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/humidity.jpg?resize=300%2C163&ssl=1 300w, https://i2.wp.com/eodos.net/wp-content/uploads/2015/05/humidity.jpg?resize=900%2C488&ssl=1 900w" sizes="(max-width: 304px) 100vw, 304px" data-recalc-dims="1" />
 
 >   * This is a summary of the moisture sensor can be used to detect soil moisture, when soil water deficiency, the module outputs a high level, whereas output low level. Using this sensor to water the flowers make an automatic device, without people to manage your garden plants.
 >   * Sensitivity can be adjusted (figure blue digital potentiometer adjust)
@@ -76,7 +78,8 @@ Nota: los sensores no se corresponden con los instalados pero sirven para ver el
 
 ## Prueba del sensor
 
-<pre class="lang:arduino decode:true ">#define HUMIDITY_SENSOR A8
+{% highlight arduino linenos=table %}
+#define HUMIDITY_SENSOR A8
 
 void setup() {
   Serial.begin(9600);
@@ -90,7 +93,7 @@ void loop() {
   Serial.println(humidity);
   delay(500);
 }
-</pre>
+{% endhighlight %}
 
 El sensor funciona correctamente. Realizando pruebas con una maceta obtenemos valores de 0 - 2% HR cuando la tierra está totalmente seca y valores en torno al 70% HR al regarla. Se observa también como el valor va disminuyendo como a poco al ir secándose la tierra.
 
@@ -106,7 +109,8 @@ Se modifican los programas escritos para el sensor de lluvia.
 
 Como necesitamos conocer el número de bytes que se van a enviar y la humedad oscila entre 0 y 100%, se completan con ceros a la izquierda antes de ser enviado, quedando los valores entre 000 y 100 y enviándose siempre 3 bytes.
 
-<pre class="lang:arduino decode:true ">#include <Wire.h>
+{% highlight arduino linenos=table %}
+#include <Wire.h>
 #include <math.h>
  
 #define SLAVE_ADDRESS 0x08
@@ -209,7 +213,8 @@ double Thermister(int RawADC) {
   //res = 1 / (0.001126068758413 + ( 0.000234572594529 + (0.000000086312248 * res * res ))* res );
   res = res - 273.15;// Convert Kelvin to Celcius
   return res;
-}</pre>
+}
+{% endhighlight %}
 
 &nbsp;
 
@@ -217,7 +222,8 @@ double Thermister(int RawADC) {
 
 Se añade la lectura del sensor de humedad, la inclusión de este valor en el array de valores y la escritura en el fichero LOG.
 
-<pre class="lang:c decode:true ">#include <stdio.h>
+{% highlight c linenos=table %}
+#include <stdio.h>
 #include <stdlib.h>
 #include "functions.h"
 
@@ -290,7 +296,8 @@ int main() {
     }
 
     return 0;
-}</pre>
+}
+{% endhighlight %}
 
 &nbsp;
 

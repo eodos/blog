@@ -18,28 +18,22 @@ tags:
 ---
 ## Introducción
 
-<del></del>El sensor de lluvia utilizado es un **FR-04** conectado a un divisor de tensión con un potenciómetro **LM393** . Las características según el fabricante son:
+El sensor de lluvia utilizado es un **FR-04** conectado a un divisor de tensión con un potenciómetro **LM393**. 
 
-> 1. Voltage: 3.3-5V<img class="  wp-image-577 alignright" src="https://i1.wp.com/eodos.net/wp-content/uploads/2015/05/rain.jpg?resize=327%2C327" alt="rain" srcset="https://i1.wp.com/eodos.net/wp-content/uploads/2015/05/rain.jpg?w=1500&ssl=1 1500w, https://i1.wp.com/eodos.net/wp-content/uploads/2015/05/rain.jpg?resize=150%2C150&ssl=1 150w, https://i1.wp.com/eodos.net/wp-content/uploads/2015/05/rain.jpg?resize=300%2C300&ssl=1 300w, https://i1.wp.com/eodos.net/wp-content/uploads/2015/05/rain.jpg?resize=1024%2C1024&ssl=1 1024w, https://i1.wp.com/eodos.net/wp-content/uploads/2015/05/rain.jpg?resize=144%2C144&ssl=1 144w, https://i1.wp.com/eodos.net/wp-content/uploads/2015/05/rain.jpg?resize=160%2C160&ssl=1 160w, https://i1.wp.com/eodos.net/wp-content/uploads/2015/05/rain.jpg?resize=320%2C320&ssl=1 320w, https://i1.wp.com/eodos.net/wp-content/uploads/2015/05/rain.jpg?resize=900%2C900&ssl=1 900w" sizes="(max-width: 327px) 100vw, 327px" data-recalc-dims="1" />
-  
+<img class="  wp-image-577 alignright" src="https://i1.wp.com/eodos.net/wp-content/uploads/2015/05/rain.jpg?resize=327%2C327" alt="rain" srcset="https://i1.wp.com/eodos.net/wp-content/uploads/2015/05/rain.jpg?w=1500&ssl=1 1500w, https://i1.wp.com/eodos.net/wp-content/uploads/2015/05/rain.jpg?resize=150%2C150&ssl=1 150w, https://i1.wp.com/eodos.net/wp-content/uploads/2015/05/rain.jpg?resize=300%2C300&ssl=1 300w, https://i1.wp.com/eodos.net/wp-content/uploads/2015/05/rain.jpg?resize=1024%2C1024&ssl=1 1024w, https://i1.wp.com/eodos.net/wp-content/uploads/2015/05/rain.jpg?resize=144%2C144&ssl=1 144w, https://i1.wp.com/eodos.net/wp-content/uploads/2015/05/rain.jpg?resize=160%2C160&ssl=1 160w, https://i1.wp.com/eodos.net/wp-content/uploads/2015/05/rain.jpg?resize=320%2C320&ssl=1 320w, https://i1.wp.com/eodos.net/wp-content/uploads/2015/05/rain.jpg?resize=900%2C900&ssl=1 900w" sizes="(max-width: 327px) 100vw, 327px" data-recalc-dims="1" />
+
+Las características según el fabricante son:
+
+> 1. Voltage: 3.3-5V
 > 2. Power indicator light, the output signal LED indicating lamp
-  
 > 3. TTL level output, TTL output signal for low level drive capacity of around 100MA, can directly drive the relay, a buzzer, a small fan, etc..
-  
 > 4. Sensitivity adjustment via potentiometer
-  
 > 5. No rain when the LED light output is high, the output level, go up, LED bright
-  
 > 6. The board and the control board is separate, convenient wire
-  
 > 7. A large area of the board, more conducive to detect the rain
-  
 > 8. The board is equipped with a positioning hole to facilitate installation
-  
 > 9. Control panel board size: 3*1.6 MM
-  
 > 10. A large area of raindrop detection board 5.4*4.0 MM
-  
 > 11. Connect cable: 200MM
 
 Para el proyecto se utiliza la salida digital TTL, la cual conmuta cuando la tensión de salida es mayor o menor al valor del potenciómetro. Esta salida nos basta para saber si el sensor detecta agua (salida 0) o si está seco (salida 1). Por motivos de legibilidad se va a negar esta salida, de forma que sea 0 cuando está seco y 1 cuando detecta agua.
