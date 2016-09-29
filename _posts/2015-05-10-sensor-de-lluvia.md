@@ -61,7 +61,8 @@ El sensor tiene 4 salidas, de izquierda a derecha:
 
 Para comprobar el sensor se escribe un programa sencillo para el Arduino. El programa establece comunicación serial, establece el pin digital 50 como entrada y realiza lecturas del pin cada 500 ms.
 
-<pre class="lang:arduino decode:true">#define RAIN_SENSOR 50
+{% highlight c lineos=table %}
+#define RAIN_SENSOR 50
 
 void setup() {
   Serial.begin(9600);
@@ -73,7 +74,8 @@ void loop() {
   rain = digitalRead(RAIN_SENSOR);
   Serial.println(rain);
   delay(500);
-}</pre>
+}
+{% endhighlight %}
 
 Funciona correctamente, comprobándose que la salida conmuta al echar unas gotas de agua sobre el sensor.
 
@@ -89,7 +91,8 @@ Cuando el Arduino reciba una cadena de caracteres que sea "RAIN", enviará el va
 
 ### Arduino
 
-<pre class="lang:arduino decode:true ">#include <Wire.h>
+{% highlight c lineos=table %}
+#include <Wire.h>
 #include <math.h>
  
 #define SLAVE_ADDRESS 0x08
@@ -181,7 +184,7 @@ double Thermister(int RawADC) {
   res = res - 273.15;// Convert Kelvin to Celcius
   return res;
 }
-</pre>
+{% endhighlight %}
 
 &nbsp;
 
@@ -189,24 +192,27 @@ double Thermister(int RawADC) {
 
 Se desarrolla un programa que pretende ser el hilo principal de ejecución de la Raspberry Pi. Este programa:
 
-  * Lee en el fichero _vars/REFRESH_RATE_ el valor de actualización de los valores de los sensores con la función **char \* readVar(char \* variable)**.</p> 
-  * Lee los valores de los sensores de temperatura y lluvia mediante la función **int readSensor(int device, char * sensor, uint nBytesSend, uint nBytesReceive)**, la cual recibe como parámetros la dirección del dispositivo a la que debe conectarse, el nombre del sensor, los bytes que se envían como petición y los bytes que se espera recibir.
+  * Lee en el fichero ```vars/REFRESH_RATE``` el valor de actualización de los valores de los sensores con la función ```char * readVar(char * variable)```.</p> 
+  * Lee los valores de los sensores de temperatura y lluvia mediante la función ```int readSensor(int device, char * sensor, uint nBytesSend, uint nBytesReceive)```, la cual recibe como parámetros la dirección del dispositivo a la que debe conectarse, el nombre del sensor, los bytes que se envían como petición y los bytes que se espera recibir.
 
-  * Obtiene la fecha y hora (timestamp) para adjuntarla a los valores obtenidos anteriormente con la función **char * getTime()**.
+  * Obtiene la fecha y hora (timestamp) para adjuntarla a los valores obtenidos anteriormente con la función ```char * getTime()```.
 
   * Convierte los valores de los sensores a char * para poder procesarlos y almacenarlos en un fichero.
 
-  * Genera un array con el nombre de las variables y otro con sus valores y luego los escribe en el fichero _vars/VARS_ mediante la función **int writeVar(char \* variables\_array[], char \* values\_array[])**. Este programa además genera un encabezado al fichero LOG si está vacío.
+  * Genera un array con el nombre de las variables y otro con sus valores y luego los escribe en el fichero _vars/VARS_ mediante la función ```int writeVar(char * variables_array[], char * values_array[])```. Este programa además genera un encabezado al fichero LOG si está vacío.
 
 Para que el valor de timestamp sea correcto, es necesario ajustar la zona horaria de la Raspberry Pi, para ello ejecutamos:
 
-<pre class="lang:sh decode:true ">> timedatectl set-timezone Europe/Madrid</pre>
+{% highlight bash %}
+$ timedatectl set-timezone Europe/Madrid
+{% endhighlight %}
 
 &nbsp;
 
-#### Programa main.c
+#### ```main.c```
 
-<pre class="lang:c decode:true">#include <stdio.h>
+{% highlight c lineos=table %}
+#include <stdio.h>
 #include <stdlib.h>
 #include "functions.h"
 
@@ -268,31 +274,37 @@ int main() {
     }
 
     return 0;
-}</pre>
+}
+{% endhighlight %}
 
 Se compila con el comando:
 
-<pre class="lang:sh decode:true">> gcc -o main main.c functions.c</pre>
+{% highlight bash %}
+$ gcc -o main main.c functions.c
+{% endhighlight %}
 
 &nbsp;
 
-#### Programa functions.h
+#### ```functions.h```
 
 Contiene las cabeceras de las funciones auxiliares descritas anteriormente.
 
-<pre class="lang:c decode:true ">extern char * ruta(char * variable);
+{% highlight c lineos=table %}
+extern char * ruta(char * variable);
 extern char * readVar(char * variable);
 extern int writeVar(char * variables_array[], char * values_array[]);
 extern char * getTime();
-extern int readSensor(int device, char * sensor, uint nBytesSend, uint nBytesReceive);</pre>
+extern int readSensor(int device, char * sensor, uint nBytesSend, uint nBytesReceive);
+{% endhighlight %}
 
 &nbsp;
 
-#### Programa functions.c
+#### ```functions.c```
 
 Contiene las funciones auxiliares.
 
-<pre class="lang:c decode:true ">#include <stdio.h>
+{% highlight c lineos=table %}
+#include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #include <fcntl.h> // open modo O_RDWR
@@ -401,7 +413,8 @@ int readSensor(int device, char * sensor, uint nBytesSend, uint nBytesReceive) {
 
     close(fd);
     return value;
-}</pre>
+}
+{% endhighlight %}
 
 &nbsp;
 
@@ -415,10 +428,10 @@ Comprobamos que funciona correctamente.
 
 ## Referencias
 
-[[1]](http://www.amazon.com/Detector-Module-Sensor-Arduino-Interface/dp/B00EEWCSRI/ref=pd_sim_sbs_328_1?ie=UTF8&refRID=07SRGGDJW112Q4JRY8GW) Módulo de detección de lluvia comprado.
+[1](http://www.amazon.com/Detector-Module-Sensor-Arduino-Interface/dp/B00EEWCSRI/ref=pd_sim_sbs_328_1?ie=UTF8&refRID=07SRGGDJW112Q4JRY8GW) Módulo de detección de lluvia comprado.
   
-<a href="http://ecx.images-amazon.com/images/I/71suNGOx2IL._SL1500_.jpg" data-rel="lightbox-2" title="">[2]</a> Imagen del sensor.
+[2](http://ecx.images-amazon.com/images/I/71suNGOx2IL._SL1500_.jpg)Imagen del sensor.
   
-[[3]](https://wiki.archlinux.org/index.php/Time) Ajustar la zona horaria en la Raspberry Pi.
+[3](https://wiki.archlinux.org/index.php/Time) Ajustar la zona horaria en la Raspberry Pi.
 
 &nbsp;

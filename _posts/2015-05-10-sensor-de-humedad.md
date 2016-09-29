@@ -78,7 +78,7 @@ Nota: los sensores no se corresponden con los instalados pero sirven para ver el
 
 ## Prueba del sensor
 
-{% highlight arduino linenos=table %}
+{% highlight c linenos=table %}
 #define HUMIDITY_SENSOR A8
 
 void setup() {
@@ -109,7 +109,7 @@ Se modifican los programas escritos para el sensor de lluvia.
 
 Como necesitamos conocer el número de bytes que se van a enviar y la humedad oscila entre 0 y 100%, se completan con ceros a la izquierda antes de ser enviado, quedando los valores entre 000 y 100 y enviándose siempre 3 bytes.
 
-{% highlight arduino linenos=table %}
+{% highlight c linenos=table %}
 #include <Wire.h>
 #include <math.h>
  
