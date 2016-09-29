@@ -428,10 +428,10 @@ Comprobamos que funciona correctamente.
 
 ## Referencias
 
-[1](http://www.amazon.com/Detector-Module-Sensor-Arduino-Interface/dp/B00EEWCSRI/ref=pd_sim_sbs_328_1?ie=UTF8&refRID=07SRGGDJW112Q4JRY8GW) Módulo de detección de lluvia comprado.
+[[1]](http://www.amazon.com/Detector-Module-Sensor-Arduino-Interface/dp/B00EEWCSRI/ref=pd_sim_sbs_328_1?ie=UTF8&refRID=07SRGGDJW112Q4JRY8GW) Módulo de detección de lluvia comprado.
   
-[2](http://ecx.images-amazon.com/images/I/71suNGOx2IL._SL1500_.jpg)Imagen del sensor.
-  
-[3](https://wiki.archlinux.org/index.php/Time) Ajustar la zona horaria en la Raspberry Pi.
+[[2]](http://ecx.images-amazon.com/images/I/71suNGOx2IL._SL1500_.jpg) Imagen del sensor.
+    
+[[3]](https://wiki.archlinux.org/index.php/Time) Ajustar la zona horaria en la Raspberry Pi.
 
 &nbsp;
