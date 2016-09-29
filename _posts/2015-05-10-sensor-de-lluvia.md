@@ -61,7 +61,7 @@ El sensor tiene 4 salidas, de izquierda a derecha:
 
 Para comprobar el sensor se escribe un programa sencillo para el Arduino. El programa establece comunicación serial, establece el pin digital 50 como entrada y realiza lecturas del pin cada 500 ms.
 
-{% highlight c lineos=table %}
+{% highlight c linenos=table %}
 #define RAIN_SENSOR 50
 
 void setup() {
@@ -91,7 +91,7 @@ Cuando el Arduino reciba una cadena de caracteres que sea "RAIN", enviará el va
 
 ### Arduino
 
-{% highlight c lineos=table %}
+{% highlight c linenos=table %}
 #include <Wire.h>
 #include <math.h>
  
@@ -211,7 +211,7 @@ $ timedatectl set-timezone Europe/Madrid
 
 #### ```main.c```
 
-{% highlight c lineos=table %}
+{% highlight c linenos=table %}
 #include <stdio.h>
 #include <stdlib.h>
 #include "functions.h"
@@ -289,7 +289,7 @@ $ gcc -o main main.c functions.c
 
 Contiene las cabeceras de las funciones auxiliares descritas anteriormente.
 
-{% highlight c lineos=table %}
+{% highlight c linenos=table %}
 extern char * ruta(char * variable);
 extern char * readVar(char * variable);
 extern int writeVar(char * variables_array[], char * values_array[]);
@@ -303,7 +303,7 @@ extern int readSensor(int device, char * sensor, uint nBytesSend, uint nBytesRec
 
 Contiene las funciones auxiliares.
 
-{% highlight c lineos=table %}
+{% highlight c linenos=table %}
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
